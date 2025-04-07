@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Screen Base Info</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <style>
+        .btn-outline-primary {
+            border-radius: 20px;
+            padding: 8px 20px;
+        }
+        .form-label {
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="row mb-4">
+            <div class="col-12">
+                <a href="/" class="btn btn-outline-primary">
+                    View Tech Screens
+                </a>
+            </div>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-12">
+                <h1>Tech Screen Base Info</h1>
+            </div>
+        </div>
+
+        <form id="techScreenForm" class="needs-validation" novalidate>
+            <div class="row mb-3">
+                <div class="col-12">
+                    <label for="candidateName" class="form-label">Candidate Name</label>
+                    <input type="text" class="form-control" id="candidateName" name="candidateName" required>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-12">
+                    <label for="client" class="form-label">Client</label>
+                    <input type="text" class="form-control" id="client" name="client" required>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-12">
+                    <label for="role" class="form-label">Role</label>
+                    <input type="text" class="form-control" id="role" name="role" required>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-12">
+                    <label for="recruiterName" class="form-label">Recruiter Name</label>
+                    <input type="text" class="form-control" id="recruiterName" name="recruiterName" required>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="screenDate" class="form-label">Screen Date</label>
+                    <input type="date" class="form-control" id="screenDate" name="screenDate" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="screenTime" class="form-label">Screen Time</label>
+                    <input type="time" class="form-control" id="screenTime" name="screenTime" required>
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-12">
+                    <label for="jobDescription" class="form-label">Job Description</label>
+                    <textarea class="form-control" id="jobDescription" name="jobDescription" rows="6" required></textarea>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Save and Continue</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Bootstrap JavaScript Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Get tech screen ID from URL if it exists (for editing)
+        const urlParams = new URLSearchParams(window.location.search);
+        const techScreenId = urlParams.get('id');
+
+        // If editing, load existing data
+        if (techScreenId) {
+            fetch(`/api/tech-screens/${techScreenId}`)
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('candidateName').value = data.candidateName;
+                    document.getElementById('client').value = data.client;
+                    document.getElementById('role').value = data.role;
+                    document.getElementById('recruiterName').value = data.recruiterName;
+                    document.getElementById('screenDate').value = data.screenDate;
+                    document.getElementById('screenTime').value = data.screenTime;
+                    document.getElementById('jobDescription').value = data.jobDescription;
+                })
+                .catch(error => {
+                    console.error('Error loading tech screen:', error);
+                    alert('Failed to load tech screen data');
+                });
+        }
+
+        // Form validation and submission
+        document.getElementById('techScreenForm').addEventListener('submit', async function(event) {
+            event.preventDefault();
+            if (!this.checkValidity()) {
+                event.stopPropagation();
+            } else {
+                try {
+                    const formData = {
+                        id: techScreenId, // Will be undefined for new tech screens
+                        candidateName: document.getElementById('candidateName').value,
+                        client: document.getElementById('client').value,
+                        role: document.getElementById('role').value,
+                        recruiterName: document.getElementById('recruiterName').value,
+                        screenDate: document.getElementById('screenDate').value,
+                        screenTime: document.getElementById('screenTime').value,
+                        jobDescription: document.getElementById('jobDescription').value
+                    };
+
+                    const response = await fetch('/api/tech-screens', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(formData)
+                    });
+
+                    if (!response.ok) {
+                        throw new Error('Failed to save tech screen');
+                    }
+
+                    const savedData = await response.json();
+                    // Redirect to the tag technologies page with the tech screen ID
+                    window.location.href = `/tag-technologies.html?id=${savedData.id}`;
+                } catch (error) {
+                    console.error('Error saving tech screen:', error);
+                    alert('Failed to save tech screen. Please try again.');
+                }
+            }
+            this.classList.add('was-validated');
+        });
+    </script>
+</body>
+</html> 

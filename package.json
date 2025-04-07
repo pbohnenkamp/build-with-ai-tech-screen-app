@@ -1,0 +1,27 @@
+{
+  "name": "build-with-ai-tech-screen-app",
+  "version": "1.0.0",
+  "description": "Repo to use in conjunction with Explore DDD 2025 Building with AI: AI-Assisted Development for AI-Powered Solutions Hands-On Session",
+  "main": "server.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pbohnenkamp/build-with-ai-tech-screen-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pbohnenkamp/build-with-ai-tech-screen-app/issues"
+  },
+  "homepage": "https://github.com/pbohnenkamp/build-with-ai-tech-screen-app#readme",
+  "dependencies": {
+    "express": "^4.18.3"
+  }
+}

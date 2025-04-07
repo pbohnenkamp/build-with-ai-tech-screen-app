@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Questions - Tech Screen App</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <style>
+        .btn-outline-primary {
+            border-radius: 20px;
+            padding: 8px 20px;
+        }
+        .info-header {
+            background-color: #e3f2fd;
+            padding: 1rem;
+            border-radius: 0.25rem;
+            margin-bottom: 1rem;
+        }
+        .info-header p {
+            margin-bottom: 0.25rem;
+        }
+        .info-label {
+            font-weight: 500;
+            margin-right: 0.5rem;
+        }
+        .technology-section {
+            position: relative;
+            border: 1px solid #dee2e6;
+            border-radius: 0.25rem;
+            margin-bottom: 1rem;
+            padding-left: 40px;
+        }
+        .technology-grip {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #6c757d;
+            cursor: move;
+            background-color: #f8f9fa;
+            border-right: 1px solid #dee2e6;
+            border-top-left-radius: 0.25rem;
+            border-bottom-left-radius: 0.25rem;
+        }
+        .technology-section.dragging {
+            opacity: 0.5;
+            border: 2px dashed #0d6efd;
+            background-color: #fff;
+        }
+        .technology-header {
+            padding: 1rem;
+            background-color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .technology-title {
+            display: flex;
+            align-items: center;
+        }
+        .question-count {
+            background-color: #0d6efd;
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 1rem;
+            font-size: 0.875rem;
+            margin-left: 0.5rem;
+        }
+        .technology-actions {
+            display: flex;
+            gap: 0.5rem;
+        }
+        .accordion-container {
+            margin: 0 1rem 1rem 1rem;
+            border: 1px solid #dee2e6;
+            border-radius: 0.25rem;
+            background-color: #fff;
+        }
+        .toggle-section {
+            width: 100%;
+            text-align: center;
+            border: none;
+            background: #f8f9fa;
+            padding: 0.75rem;
+            cursor: pointer;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .toggle-section:hover {
+            background-color: #e9ecef;
+        }
+        .technology-content {
+            padding: 1rem;
+            background-color: #fff;
+        }
+        .questions-container {
+            margin-bottom: 1rem;
+        }
+        .question-container {
+            position: relative;
+            margin-bottom: 1rem;
+            padding-left: 40px;
+            background-color: white;
+            border: 1px solid #dee2e6;
+            border-radius: 0.25rem;
+        }
+        .question-textarea {
+            width: 100%;
+            border: none;
+            padding: 0.5rem;
+        }
+        .question-textarea:focus {
+            outline: none;
+            box-shadow: none;
+        }
+        .delete-question {
+            position: absolute;
+            top: 0.5rem;
+            right: 0.5rem;
+            color: #dc3545;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 0;
+            z-index: 1;
+        }
+        .question-grip {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #6c757d;
+            cursor: move;
+            background-color: #f8f9fa;
+            border-right: 1px solid #dee2e6;
+        }
+        .question-container.dragging {
+            opacity: 0.5;
+            border: 2px dashed #0d6efd;
+        }
+        .add-question-btn {
+            width: auto;
+            text-align: left;
+        }
+        .content-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="d-flex gap-2">
+                    <a href="/" class="btn btn-outline-primary">Back to List</a>
+                    <button class="btn btn-outline-success">Print Questionnaire</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-12">
+                <h1>Manage Questions</h1>
+            </div>
+        </div>
+
+        <div class="info-header">
+            <p><span class="info-label">Candidate:</span><span id="candidateName"></span></p>
+            <p><span class="info-label">Recruiter:</span><span id="recruiterName"></span></p>
+            <p><span class="info-label">Date:</span><span id="screenDateTime"></span></p>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-12">
+                <button id="collapseAllBtn" class="btn btn-secondary">
+                    <i class="bi bi-chevron-up"></i> Collapse All
+                </button>
+            </div>
+        </div>
+
+        <div id="technologiesContainer">
+            <!-- Technologies and their questions will be dynamically inserted here -->
+        </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+        <div id="saveToast" class="toast align-items-center text-white bg-success border-0" role="alert" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body">
+                    <i class="bi bi-check-circle me-2"></i>
+                    Questions saved successfully!
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+        <div id="errorToast" class="toast align-items-center text-white bg-danger border-0" role="alert" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body">
+                    <i class="bi bi-exclamation-circle me-2"></i>
+                    Failed to save questions. Please try again.
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Technology Section Template -->
+    <template id="technologyTemplate">
+        <div class="technology-section mb-4" draggable="true">
+            <div class="technology-grip">
+                <i class="bi bi-grip-vertical"></i>
+            </div>
+            <div class="technology-header">
+                <div class="technology-title">
+                    <h5 class="mb-0">
+                        <span class="technology-name"></span>
+                        <span class="question-count"></span>
+                    </h5>
+                </div>
+                <div class="technology-actions">
+                    <button class="btn btn-info btn-sm save-to-form">Save to Form</button>
+                    <button class="btn btn-success btn-sm save-to-repository">Save to Repository</button>
+                    <button class="btn btn-warning btn-sm restore-from-repository">Restore From Repository</button>
+                </div>
+            </div>
+            <div class="accordion-container">
+                <button class="toggle-section">
+                    <i class="bi bi-chevron-up"></i>
+                </button>
+                <div class="technology-content">
+                    <div class="questions-container">
+                        <!-- Questions will be dynamically inserted here -->
+                    </div>
+                    <div class="content-actions">
+                        <button class="btn btn-success add-question-btn">
+                            <i class="bi bi-plus-circle"></i> Add Question
+                        </button>
+                        <button class="btn btn-info save-to-form">Save to Form</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <!-- Question Template -->
+    <template id="questionTemplate">
+        <div class="question-container" draggable="true">
+            <div class="question-grip">
+                <i class="bi bi-grip-vertical"></i>
+            </div>
+            <textarea class="form-control question-textarea" rows="3"></textarea>
+            <button class="delete-question" title="Delete Question">
+                <i class="bi bi-x-circle-fill"></i>
+            </button>
+        </div>
+    </template>
+
+    <!-- Bootstrap JavaScript Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Initialize toasts
+        const saveToast = new bootstrap.Toast(document.getElementById('saveToast'), {
+            autohide: true,
+            delay: 3000
+        });
+        const errorToast = new bootstrap.Toast(document.getElementById('errorToast'), {
+            autohide: true,
+            delay: 5000
+        });
+
+        // Get tech screen ID from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const techScreenId = urlParams.get('id');
+        
+        if (!techScreenId) {
+            window.location.href = '/';
+        }
+
+        // Create a new technology section
+        function createTechnologySection(technology, questions = []) {
+            const template = document.getElementById('technologyTemplate');
+            const clone = template.content.cloneNode(true);
+            
+            const section = clone.querySelector('.technology-section');
+            section.id = `tech-${technology.replace(/\s+/g, '-')}`;
+            
+            // Add drag and drop event listeners for technology section
+            section.addEventListener('dragstart', handleTechnologyDragStart);
+            section.addEventListener('dragend', handleTechnologyDragEnd);
+            section.addEventListener('dragover', handleTechnologyDragOver);
+            section.addEventListener('drop', handleTechnologyDrop);
+            
+            const nameElement = clone.querySelector('.technology-name');
+            nameElement.textContent = technology;
+            
+            const countElement = clone.querySelector('.question-count');
+            countElement.textContent = `${questions.length} questions`;
+
+            const questionsContainer = clone.querySelector('.questions-container');
+            questions.forEach(question => {
+                const questionElement = createQuestionElement(question);
+                questionsContainer.appendChild(questionElement);
+            });
+
+            // Add event listeners
+            clone.querySelector('.add-question-btn').addEventListener('click', () => {
+                const questionElement = createQuestionElement();
+                section.querySelector('.questions-container').appendChild(questionElement);
+                updateQuestionCount(section);
+            });
+
+            clone.querySelector('.toggle-section').addEventListener('click', (e) => {
+                const content = section.querySelector('.technology-content');
+                const icon = e.currentTarget.querySelector('i');
+                content.style.display = content.style.display === 'none' ? 'block' : 'none';
+                icon.classList.toggle('bi-chevron-up');
+                icon.classList.toggle('bi-chevron-down');
+            });
+
+            // Save to Form buttons (both header and content)
+            clone.querySelectorAll('.save-to-form').forEach(button => {
+                button.addEventListener('click', async () => {
+                    await saveTechnologyQuestions(technology, false);
+                });
+            });
+
+            // Save to Repository button
+            clone.querySelector('.save-to-repository').addEventListener('click', async () => {
+                await saveTechnologyQuestions(technology, true);
+            });
+
+            // Restore From Repository button
+            clone.querySelector('.restore-from-repository').addEventListener('click', async () => {
+                await loadQuestionsFromRepository(technology);
+            });
+
+            return section;
+        }
+
+        // Create a new question element
+        function createQuestionElement(questionText = '') {
+            const template = document.getElementById('questionTemplate');
+            const clone = template.content.cloneNode(true);
+            
+            const container = clone.querySelector('.question-container');
+            const textarea = clone.querySelector('textarea');
+            textarea.value = questionText;
+
+            // Add drag and drop event listeners
+            container.addEventListener('dragstart', handleDragStart);
+            container.addEventListener('dragend', handleDragEnd);
+            container.addEventListener('dragover', handleDragOver);
+            container.addEventListener('drop', handleDrop);
+
+            const deleteBtn = clone.querySelector('.delete-question');
+            deleteBtn.addEventListener('click', (e) => {
+                const container = e.target.closest('.question-container');
+                const section = container.closest('.technology-section');
+                container.remove();
+                updateQuestionCount(section);
+            });
+
+            return clone;
+        }
+
+        // Update question count for a technology section
+        function updateQuestionCount(section) {
+            const count = section.querySelectorAll('.question-container').length;
+            const countElement = section.querySelector('.question-count');
+            countElement.textContent = `${count} questions`;
+        }
+
+        // Toggle all sections
+        let allExpanded = true;
+        document.getElementById('collapseAllBtn').addEventListener('click', () => {
+            const sections = document.querySelectorAll('.technology-content');
+            const icons = document.querySelectorAll('.toggle-section i');
+            sections.forEach(section => {
+                section.style.display = allExpanded ? 'none' : 'block';
+            });
+            icons.forEach(icon => {
+                icon.classList.toggle('bi-chevron-up', !allExpanded);
+                icon.classList.toggle('bi-chevron-down', allExpanded);
+            });
+            allExpanded = !allExpanded;
+            const btn = document.getElementById('collapseAllBtn');
+            btn.innerHTML = `<i class="bi bi-chevron-${allExpanded ? 'up' : 'down'}"></i> ${allExpanded ? 'Collapse' : 'Expand'} All`;
+        });
+
+        // Drag and drop functionality
+        let draggedElement = null;
+
+        function handleDragStart(e) {
+            draggedElement = this;
+            this.classList.add('dragging');
+            
+            // Store the container's HTML as drag data
+            e.dataTransfer.effectAllowed = 'move';
+            e.dataTransfer.setData('text/html', this.innerHTML);
+        }
+
+        function handleDragEnd(e) {
+            this.classList.remove('dragging');
+            
+            // Update the questions count after reordering
+            const section = this.closest('.technology-section');
+            if (section) {
+                updateQuestionCount(section);
+            }
+        }
+
+        function handleDragOver(e) {
+            if (e.preventDefault) {
+                e.preventDefault();
+            }
+            
+            e.dataTransfer.dropEffect = 'move';
+            
+            const container = this.closest('.question-container');
+            if (container && container !== draggedElement) {
+                // Get the bounding rectangle of the target container
+                const rect = container.getBoundingClientRect();
+                const midpoint = rect.top + (rect.height / 2);
+                
+                if (e.clientY < midpoint) {
+                    container.parentNode.insertBefore(draggedElement, container);
+                } else {
+                    container.parentNode.insertBefore(draggedElement, container.nextSibling);
+                }
+            }
+            
+            return false;
+        }
+
+        function handleDrop(e) {
+            if (e.stopPropagation) {
+                e.stopPropagation();
+            }
+            
+            return false;
+        }
+
+        // Drag and drop functionality for technology sections
+        let draggedTechnology = null;
+
+        function handleTechnologyDragStart(e) {
+            draggedTechnology = this;
+            this.classList.add('dragging');
+            e.dataTransfer.effectAllowed = 'move';
+            e.dataTransfer.setData('text/html', this.outerHTML);
+        }
+
+        function handleTechnologyDragEnd(e) {
+            this.classList.remove('dragging');
+            // Save the new order after drag ends
+            saveTechnologyOrder();
+        }
+
+        function handleTechnologyDragOver(e) {
+            if (e.preventDefault) {
+                e.preventDefault();
+            }
+            
+            e.dataTransfer.dropEffect = 'move';
+            
+            const section = this.closest('.technology-section');
+            if (section && section !== draggedTechnology) {
+                const rect = section.getBoundingClientRect();
+                const midpoint = rect.top + (rect.height / 2);
+                
+                if (e.clientY < midpoint) {
+                    section.parentNode.insertBefore(draggedTechnology, section);
+                } else {
+                    section.parentNode.insertBefore(draggedTechnology, section.nextSibling);
+                }
+            }
+            
+            return false;
+        }
+
+        function handleTechnologyDrop(e) {
+            if (e.stopPropagation) {
+                e.stopPropagation();
+            }
+            return false;
+        }
+
+        // Save the current order of technologies
+        async function saveTechnologyOrder() {
+            try {
+                const response = await fetch(`/api/tech-screens/${techScreenId}`);
+                if (!response.ok) throw new Error('Failed to fetch tech screen');
+                
+                const techScreen = await response.json();
+                
+                // Update the technologies array to match the current order
+                techScreen.technologies = Array.from(document.querySelectorAll('.technology-section'))
+                    .map(section => section.querySelector('.technology-name').textContent);
+
+                const saveResponse = await fetch('/api/tech-screens', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(techScreen)
+                });
+
+                if (!saveResponse.ok) throw new Error('Failed to save technology order');
+                
+                saveToast.show();
+            } catch (error) {
+                console.error('Error saving technology order:', error);
+                errorToast.show();
+            }
+        }
+
+        // Save questions for a technology
+        async function saveTechnologyQuestions(technology, toRepository = false) {
+            try {
+                const section = document.getElementById(`tech-${technology.replace(/\s+/g, '-')}`);
+                // Get questions in their current order
+                const questions = Array.from(section.querySelectorAll('.question-textarea'))
+                    .map(textarea => textarea.value.trim())
+                    .filter(q => q.length > 0);
+
+                if (toRepository) {
+                    const saveResponse = await fetch(`/api/question-repo/${encodeURIComponent(technology)}`, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ questions })
+                    });
+
+                    if (!saveResponse.ok) throw new Error('Failed to save to repository');
+                } else {
+                    const response = await fetch(`/api/tech-screens/${techScreenId}`);
+                    if (!response.ok) throw new Error('Failed to fetch tech screen');
+                    
+                    const techScreen = await response.json();
+                    if (!techScreen.questions) techScreen.questions = {};
+                    
+                    // Update the technologies array to match the current order
+                    techScreen.technologies = Array.from(document.querySelectorAll('.technology-section'))
+                        .map(section => section.querySelector('.technology-name').textContent);
+                    
+                    techScreen.questions[technology] = questions;
+
+                    const saveResponse = await fetch('/api/tech-screens', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(techScreen)
+                    });
+
+                    if (!saveResponse.ok) throw new Error('Failed to save questions');
+                }
+
+                saveToast.show();
+            } catch (error) {
+                console.error('Error saving questions:', error);
+                errorToast.show();
+            }
+        }
+
+        // Load questions from repository for a technology
+        async function loadQuestionsFromRepository(technology) {
+            try {
+                const response = await fetch(`/api/question-repo/${encodeURIComponent(technology)}`);
+                if (!response.ok) throw new Error('Failed to fetch from repository');
+                
+                const questions = await response.json();
+                
+                const section = document.getElementById(`tech-${technology.replace(/\s+/g, '-')}`);
+                const questionsContainer = section.querySelector('.questions-container');
+                
+                // Clear existing questions
+                questionsContainer.innerHTML = '';
+                
+                // Add questions from repository
+                questions.forEach(question => {
+                    const questionElement = createQuestionElement(question);
+                    questionsContainer.appendChild(questionElement);
+                });
+                
+                // Update question count
+                updateQuestionCount(section);
+                
+                saveToast.show();
+            } catch (error) {
+                console.error('Error loading from repository:', error);
+                errorToast.show();
+            }
+        }
+
+        // Load tech screen data
+        async function loadTechScreen() {
+            try {
+                const response = await fetch(`/api/tech-screens/${techScreenId}`);
+                if (!response.ok) throw new Error('Failed to fetch tech screen');
+
+                const techScreen = await response.json();
+                
+                // Update header info
+                document.getElementById('candidateName').textContent = techScreen.candidateName;
+                document.getElementById('recruiterName').textContent = techScreen.recruiterName;
+                document.getElementById('screenDateTime').textContent = 
+                    `${techScreen.screenDate} ${techScreen.screenTime}`;
+
+                // Create sections for each technology
+                const container = document.getElementById('technologiesContainer');
+                techScreen.technologies.forEach(tech => {
+                    const questions = techScreen.questions?.[tech] || [];
+                    const section = createTechnologySection(tech, questions);
+                    container.appendChild(section);
+                });
+            } catch (error) {
+                console.error('Error loading tech screen:', error);
+                errorToast.show();
+            }
+        }
+
+        // Load data when page loads
+        document.addEventListener('DOMContentLoaded', loadTechScreen);
+    </script>
+</body>
+</html> 
