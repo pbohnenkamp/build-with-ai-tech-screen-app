@@ -1,0 +1,13 @@
+{
+  "id": "Test_001",
+  "candidateName": "Test 001",
+  "recruiterName": "Test Recruiter",
+  "screenDate": "",
+  "screenTime": "",
+  "jobDescription": "Software Engineer (Java & React Full Stack) \n\nOur healthcare client is seeking a full-time Software Engineer to join their growing team on a long-term (12+ month) consulting basis, with a strong potential of extension or conversion to a full-time employee in the future.  This critical role and force multiplier, the Software Engineer is an integral member of the team responsible for designing and delivering solutions in our client’s software applications to support the organization's mission and goals.\n\n \n\nKey Responsibilities:\n\nParticipate in software delivery as a hands-on engineer by designing, building testing and maintaining technical solutions for the company.\nCollaborate on innovative solutions to challenging technical problems by optimizing code, improving performance, or resolving critical technical issues.\nParticipate in code reviews to ensure code quality, maintainability, and adherence to best practices.\nCollaborate with cross-functional teams, including product managers, designers, and stakeholders, to ensure that technical solutions align with the overall product and business goals.\nContribute technical documentation to ensure that the codebase and architecture are well-documented for current and future team members.\nEmbody the values of Trust, Collaboration, Accountability, Customer Success, Innovation, and Respect\nRequirements:\n\nBachelor’s degree in computer science, management information systems, or a closely-related field is preferred\nMinimum of 5 years of experience in software engineering is preferred\nExperience with React, Java, Node.js, JavaScript and SQL is preferred\nExperience with Next.js and Nx is a plus\nDemonstrated experience with cloud services (e.g. Amazon AWS) and related infrastructure, REST APIs and data pipelines\nProficiency in agile development methodologies, SDLC tooling and DevOps\nAbility to thrive in a fast-paced environment\nExperience in healthcare or digital health is a plus",
+  "technologies": [],
+  "createdAt": "2025-02-12T05:32:38.810Z",
+  "role": "Test Role",
+  "client": "Test Client",
+  "updatedAt": "2025-04-09T06:03:38.892Z"
+}

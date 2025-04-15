@@ -1,0 +1,27 @@
+{
+  "id": "Test_045",
+  "candidateName": "Test 045",
+  "recruiterName": "Test Recruiter",
+  "screenDate": "",
+  "screenTime": "",
+  "jobDescription": "This position functions as an application development specialist. The primary responsibility is to provide application development and maintenance support activities. This position ensures the development of efficient system operations across a variety of technical and information system areas. This position is responsible for all systems development life cycle (SDLC) activities including research, analysis, evaluation, planning, development, implementation, and delivery of automated solutions. Responsibilities also include identifying and recommending potential Internet/Intranet applications, assuring compliance with application and web site standards, and mentoring less senior application developers.\n\n \n\nOther Responsibilities will include:  \n\nAnalysis and design of complex new systems and maintenance or enhancements to existing systems.\nDevelopment and testing of complex new computer systems and maintenance or enhancements to existing systems.\nReview system design specifications or project requests to understand requirements and prepare detailed estimates of required resources.\nAssist in the development and maintenance of development standards, procedures, and policies to be used in agency application development activities.\nThe ideal candidate will have experience with the following: \n\nKnowledge of systems development practices and principles.\nKnowledge of systems analysis techniques.\nKnowledge of cost benefit analysis techniques.\nKnowledge of object oriented principles and design patterns.\nProfessional oral and written communication skills.\nProblem determination and resolution skills.\nKnowledge of web-enabled and e-commerce applications.\nKnowledge of client/server and Internet concepts, procedures, and techniques.\nKnowledge of Windows Server.\nKnowledge of ASP.NET Web Forms.\nExpert knowledge of Microsoft .NET technologies such as C# , ASP.NET MVC and .NET Core\nExpert knowledge of Web Services, JavaScript, Cascading Style Sheets, Entity Framework and AJAX\nWorking knowledge of Database Modeling/Design.\nExpert Working knowledge of SQL and Stored Procedures.\nKnowledge of project management methodologies such as waterfall and agile.\n",
+  "technologies": [
+    "Object Oriented Programming (OOP)",
+    "Design Patterns",
+    "Windows Server",
+    ".NET",
+    "C#",
+    "ASP.NET MVC",
+    "REST APIs",
+    "JavaScript",
+    "CSS",
+    "Entity Framework",
+    "AJAX",
+    "SQL",
+    "Stored Procedures",
+    "System Architecture"
+  ],
+  "createdAt": "2025-02-13T06:40:27.598Z",
+  "role": "Test Role",
+  "client": "Test Client"
+}

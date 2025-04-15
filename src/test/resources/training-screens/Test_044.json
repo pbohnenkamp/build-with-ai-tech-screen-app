@@ -1,0 +1,22 @@
+{
+  "id": "Test_044",
+  "candidateName": "Test 044",
+  "recruiterName": "Test Recruiter",
+  "screenDate": "",
+  "screenTime": "",
+  "jobDescription": "Software Engineer\n\nPosition:  Software Developer – C++ with Linux package creation required\n\nDuration: 12 months with opportunities for multiple extensions\n\n \n\nRoles and Responsibilities:\n\nBe responsible for defining, developing, and evolving software in a fast-paced agile scrum team, and agile development environment using the latest software development technologies and infrastructure.\nWork with a cross functional team of engineers, scientists, and applications experts to translate high level MR compute needs that demand new computer capabilities into component-level requirements.\nPlan and perform integration activities at component, sub-system, and system levels.  Document designs and verification activities; perform component & subsystem level verifications, participate in system level verifications and validations as necessary.\nKeep abreast of Linux Service Pack releases, recommend adoption and do the adoption.\nAssist in hardware selection for EoL replacement of alternative modules and for Next Gen HW\nBe interface to root case issues with OS partners (SUSE), FW and HW teams.\nFacilitate performance issues triage and resolution when spanning HW, FW and OS modules or settings.\nAugment OS RPM packaging and install scripts.\nDo Diags development – augmenting what comes from IHV and/or ISV.\nImplementing Security and Serviceability changes at Compute layer.\nTest automation development for Diags/ SW packages/Linux SP releases.\nUnderstand research and industry trends in Compute, containers, virtual machines, cyber security, Linux OS and packing technologies.\nWork with product line leaders and architects to develop multi generation software technology plans.\nDrive increased efficiency across the teams, eliminating duplication, leveraging product and technology reuse.\nSupport process improvements which guide the development, sustaining & support activities\nUnderstand performance parameters and assess application performance.\nProactively share information across the team, to the right audience with the appropriate level of detail and timeliness",
+  "technologies": [
+    "C++",
+    "Linux RPM Packaging",
+    "Shell Scripting",
+    "Linux",
+    "Test Automation",
+    "Virtual Machines",
+    "Containers",
+    "Cyber Security"
+  ],
+  "createdAt": "2025-02-12T06:03:41.231Z",
+  "role": "Test Role",
+  "client": "Test Client",
+  "updatedAt": "2025-04-09T05:30:28.834Z"
+}

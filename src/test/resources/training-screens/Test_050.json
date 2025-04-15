@@ -1,0 +1,20 @@
+{
+  "id": "Test_050",
+  "candidateName": "Test 050",
+  "recruiterName": "Test Recruiter",
+  "screenDate": "",
+  "screenTime": "",
+  "jobDescription": "Our healthcare product client is looking for multiple year experienced C++ Software Engineer professional to join their team on a long-term consulting contract.  \n\nThese individuals will be responsible for owning and programming components in Device Management & Systems Controls Software teams.  They will join a team and own a component, feature or a feature set.  They will apply principles of SDLC, Agile methodologies and Continuous Integration as well as perform software troubleshooting and investigations of components and features.   This team works on software platform goals for hardware abstraction and detector communications.\n\n \n\nThe ideal candidate will have experience with the following: \n\n \n\nMultiple years of professional experience in software engineering and application development professional experience in software development\nProven hands-on experience with object-oriented programming languages, including C++ as a primary language\nExperience working on Linux based platforms\nWorking knowledge in configuration management tools\nPython, shell and Bash scripting experience\nSkilled in core data structures and algorithms\nSoftware Platforming Experience\nMedical Device Software Development Experience is a plus\nEngineering project management experience with Agile Teams\nBachelor’s Degree in Computer Science, Computer Engineering or equivalent\n",
+  "technologies": [
+    "C++",
+    "Linux",
+    "Python",
+    "Shell Scripting",
+    "Data Structures",
+    "Algorithms",
+    "Object Oriented Programming (OOP)"
+  ],
+  "createdAt": "2025-02-13T06:47:23.038Z",
+  "role": "Test Role",
+  "client": "Test Client"
+}

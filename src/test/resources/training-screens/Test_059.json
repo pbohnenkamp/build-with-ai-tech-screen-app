@@ -1,0 +1,29 @@
+{
+  "id": "Test_059",
+  "candidateName": "Test 059",
+  "recruiterName": "Test Recruiter",
+  "screenDate": "",
+  "screenTime": "",
+  "jobDescription": "Role Responsibilities Overview/What you will do:\n\n\n\nWe are seeking a highly skilled and experienced Senior Full Stack Developer with a\n\nstrong background in web and mobile application development to join our growing team. The ideal candidate will have expertise in developing high quality user interfaces, with the ability to build out and update supporting API methods in a Node.JS environment. You will be responsible for code review and maintenance, as well as future builds.\n\n\n\nResponsibilities:\n\n• Web Development: Build and maintain scalable and high-performance web applications using TypeScript, Node.js, React and modern tools.\n\n• Integration: Integrate third-party services and APIs, such as video streaming platforms, PDF rendering technologies, and document management solutions.\n\n• APIs: Develop and maintain RESTful APIs for both web and mobile applications using Node.js, TypeScript, and Koa.js (or similar framework).\n\n• Database Management: Utilize relational databases, such as PostgreSQL, to model data, optimize performance, and ensure data integrity.\n\n• Testing & Debugging: Write unit and integration tests for front-end and back-end code, ensuring the application is robust and bug-free.\n\n• Code Reviews: Participate in code reviews and contribute to improving team development processes.\n\n\n\nTechnical Expertise:\n\nTypeScript, React, NodeJS, Postgres, Redis, WebSockets, API Integration, Koa/Express or similar framework\n\n\n\nProblem Solving:\n\n• Diagnose and fix bugs and performance bottlenecks for optimal application\n\nperformance.\n\n• Collaborate with the QA team to identify and resolve issues.\n\n\n\nDocumentation:\n\n• Document code, processes, and solutions for future reference.\n\n• Contribute to the development of technical documentation for end-users.\n\n\n\n\n\nGreat to Have:\n\n• Experience developing mobile applications for iOS and Android platforms using React Native.\n\n• Experience with real-time communication protocols (WebSockets, Socket.io).\n\n• Demonstrated ownership of projects and their deliveries.\n\n• Background working in startups or small teams.\n\n\n\nQualifications:\n\n• Bachelor's degree in Computer Science or a related technical discipline.\n\n• 7-10 years of experience in software engineering.\n\n• Strong expertise in TypeScript for web development.\n\n• Strong understanding of relational databases such as PostgreSQL.\n\n• Experience with version control systems (e.g., Git).\n\n• Excellent problem-solving and debugging skills.\n\n• Excellent communication and collaborative skills.\n\n",
+  "technologies": [
+    "JavaScript",
+    "TypeScript",
+    "Node.js",
+    "Express",
+    "React",
+    "REST APIs",
+    "Koa.js",
+    "PostgreSQL",
+    "SQL",
+    "Unit Testing",
+    "Redis",
+    "WebSockets",
+    "React Native",
+    "Socket.io",
+    "iOS",
+    "Android"
+  ],
+  "createdAt": "2025-02-13T07:04:40.584Z",
+  "role": "Test Role",
+  "client": "Test Client"
+}

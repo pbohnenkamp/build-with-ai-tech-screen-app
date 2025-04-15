@@ -1,0 +1,20 @@
+{
+  "id": "Test_054",
+  "candidateName": "Test 054",
+  "recruiterName": "Test Recruiter",
+  "screenDate": "",
+  "screenTime": "",
+  "jobDescription": "Role Summary/Purpose:\n\nSr Software Engineer in X-ray Engineering organization is an experienced software engineering role responsible for owning and programming components in X-ray Device Management & Systems Controls Software teams.  \n\nEssential Responsibilities:\n\nIn this role you will:\n\nWork with X-ray product software and own a component, feature or a feature set\nTake ownership of small and medium sized tasks and deliver, while mentoring and helping team members\nWork cross functionally with other teams and contribute to design discussions\nTake initiative and to explore alternate technologies and approaches to solving problems\nApply principles of SDLC, Agile methodologies and Continuous Integration\nPerform software troubleshooting and investigations of components and features\nContinuously expand technical knowledge, keep abreast of emerging software technologies and apply them to the product software\nIdentify, plan, and track development, integration, reliability, verification, and design transfer tasks\nWork on software platform goals for X-Ray hardware abstraction \n \n\nBasic Qualifications:\n\n \n\n·         Bachelor’s Degree in Computer Science, Computer Engineering or equivalent\n\n·         A minimum of 3 years of professional experience in software development\n\n·         Proven hands-on experience with object-oriented programming languages, primarily C++\n\n·         Skilled in core data structures and algorithms \n\n·         Experience working on Linux based platforms\n\n·         Working knowledge in configuration management tools\n\n·         Strong analytical skills, and experience in software development lifecycle\n\nAdditional Eligibility Requirements:\n\n·         Must be willing to work out of an office located in New York, NY\n\n \n\nDesired Characteristics: \n\nMaster’s degree in Computer Science, Computer Engineering or equivalent\n10+ years of software development experience with C++\n3+ years of Python /shell scripting experience \nExpert in writing code that meets standards and delivers desired functionality using the technology selected for a project. \nExperience working in complex software development projects\nStrong oral, written communication skills and interpersonal skills\nAdapt to new environments, changing requirements and pivots quickly as needed\nIdentify opportunities for innovation and offers new ideas.\nTakes initiative to experiment with new software frameworks\nEngineering project management experience with Agile Teams\nMedical Device Software Development Experience\nSoftware Platforming Experience\nNetworking and Wi-Fi experience\n",
+  "technologies": [
+    "Object Oriented Programming (OOP)",
+    "C++",
+    "Algorithms",
+    "Linux",
+    "Python",
+    "Networking",
+    "Shell Scripting"
+  ],
+  "createdAt": "2025-02-13T06:56:42.398Z",
+  "role": "Test Role",
+  "client": "Test Client"
+}

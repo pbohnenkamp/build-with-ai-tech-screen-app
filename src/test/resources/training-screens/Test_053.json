@@ -1,0 +1,23 @@
+{
+  "id": "Test_053",
+  "candidateName": "Test 053",
+  "recruiterName": "Test Recruiter",
+  "screenDate": "",
+  "screenTime": "",
+  "jobDescription": "\nOur client is looking for an experienced Angular & Ruby Rails developer to join their app dev team on a short-term contract basis to start with the potential to turn into something long term. \n\nThe Developer will be working on an application is a platform built for the aerospace and defense industry and reduces operational costs, improves traceability, and enhances cybersecurity all while helping supply chains go green and stand out in the market. The platform is marketed as the best way to save time and money through its suite of secure compliant cloud-based applications that comply with CMMC, DFARS, NIST, ITAR, and EAR requirements, fully backed by immutable blockchain technology.\n\n \n\nThe ideal candidate will have the following skills:\n\nStrong Angular development background, coupled with a knowledge of other technologies within the JavaScript library. \n\nLooking for experience working as a Senior Full Stack developer utilizing Ruby and Angular.\n\nExtensive experience creating APIs\n\nLooking for someone with a start-up mindset who is mature and senior enough to operate independently.",
+  "technologies": [
+    "Angular",
+    "Ruby",
+    "Ruby on Rails",
+    "JavaScript",
+    "REST APIs",
+    "SQL",
+    "CSS",
+    "TypeScript",
+    "Cloud",
+    "Blockchain"
+  ],
+  "createdAt": "2025-02-13T06:54:32.524Z",
+  "role": "Test Role",
+  "client": "Test Client"
+}

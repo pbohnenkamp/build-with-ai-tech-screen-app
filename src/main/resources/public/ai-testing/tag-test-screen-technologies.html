@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tag Technologies - AI Testing</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Tagify CSS -->
+    <link
+      href="https://unpkg.com/@yaireo/tagify/dist/tagify.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+      .btn-outline-primary {
+        border-radius: 20px;
+        padding: 8px 20px;
+      }
+      .job-description {
+        background-color: #f8f9fa;
+        padding: 1rem;
+        border-radius: 0.25rem;
+        height: calc(100vh - 250px);
+        overflow-y: auto;
+        resize: none;
+      }
+      .tagify {
+        min-height: 100px;
+        background: white;
+      }
+      /* Improve tag styling */
+      .tagify__tag {
+        margin: 5px;
+        --tag-bg: #198754;
+        --tag-text-color: white;
+        --tag-hover: #157347;
+      }
+      /* White x button */
+      .tagify__tag__removeBtn {
+        color: white;
+      }
+      .tagify__tag__removeBtn:hover {
+        color: white;
+        background: rgba(255, 255, 255, 0.1);
+      }
+      .btn-row {
+        display: flex;
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+      .toast-container {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1050;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-4">
+      <div class="row mb-4">
+        <div class="col-12">
+          <a href="/ai-testing/" class="btn btn-outline-primary">Back to AI Testing List</a>
+        </div>
+      </div>
+
+      <div class="row mb-4">
+        <div class="col-12">
+          <h1>Tag Technologies - AI Testing</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Job Description Column -->
+        <div class="col-md-6">
+          <h5>Job Description</h5>
+          <textarea id="jobDescription" class="form-control job-description" placeholder="Enter job description here..."></textarea>
+        </div>
+
+        <!-- Technologies Column -->
+        <div class="col-md-6">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <h5 class="mb-0">Technologies</h5>
+          </div>
+          <input id="technologies" type="text" class="form-control" />
+          <div class="btn-row mb-4 d-flex justify-content-between">
+            <button id="saveAndPreviousBtn" class="btn btn-primary">Save and Previous</button>
+            <button id="saveBtn" class="btn btn-primary">Save</button>
+            <button id="saveAndNextBtn" class="btn btn-primary">Save and Next</button>
+          </div>
+          <div>
+            <button id="aiSuggestionsBtn" class="btn btn-outline-primary">
+              <i class="bi bi-robot me-2"></i>Preview AI Suggestions
+              <span id="aiSuggestionsSpinner" class="spinner-border spinner-border-sm ms-2 d-none" role="status" aria-hidden="true"></span>
+            </button>
+          </div>
+          <div class="mt-4">
+            <h5 class="mb-2">AI Suggestions</h5>
+            <input id="aiSuggestions" type="text" class="form-control" readonly />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div class="toast-container">
+      <div
+        id="saveToast"
+        class="toast align-items-center text-white bg-success border-0"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="d-flex">
+          <div class="toast-body">
+            <i class="bi bi-check-circle me-2"></i>
+            Technologies saved successfully!
+          </div>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-2 m-auto"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+      </div>
+      <div
+        id="aiTagsToast"
+        class="toast align-items-center text-white bg-success border-0"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="d-flex">
+          <div class="toast-body">
+            <i class="bi bi-check-circle me-2"></i>
+            AI tags added successfully!
+          </div>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-2 m-auto"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+      </div>
+      <div
+        id="errorToast"
+        class="toast align-items-center text-white bg-danger border-0"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="d-flex">
+          <div class="toast-body">
+            <i class="bi bi-exclamation-circle me-2"></i>
+            Failed to save technologies. Please try again.
+          </div>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-2 m-auto"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+      </div>
+      <div
+        id="noSuggestionsToast"
+        class="toast align-items-center text-white bg-warning border-0"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+      <div class="d-flex">
+        <div class="toast-body">
+          <i class="bi bi-exclamation-circle me-2"></i>
+          No technology suggestions returned from AI.
+        </div>
+        <button
+          type="button"
+          class="btn-close btn-close-white me-2 m-auto"
+          data-bs-dismiss="toast"
+          aria-label="Close"
+        ></button>
+      </div>
+    </div>
+
+    <!-- Bootstrap JavaScript Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Tagify JavaScript -->
+    <script src="https://unpkg.com/@yaireo/tagify/dist/tagify.min.js"></script>
+
+    <script>
+      // Initialize toasts
+      const saveToast = new bootstrap.Toast(
+        document.getElementById("saveToast"),
+        {
+          autohide: true,
+          delay: 3000,
+        }
+      );
+      const errorToast = new bootstrap.Toast(
+        document.getElementById("errorToast"),
+        {
+          autohide: true,
+          delay: 5000,
+        }
+      );
+      const noSuggestionsToast = new bootstrap.Toast(
+        document.getElementById("noSuggestionsToast"),
+        {
+          autohide: true,
+          delay: 5000,
+        }
+      );
+      const aiTagsToast = new bootstrap.Toast(
+        document.getElementById("aiTagsToast"),
+        {
+          autohide: true,
+          delay: 5000,
+        }
+      );
+
+      // Get test screen ID from URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const testId = urlParams.get("id");
+
+      if (!testId) {
+        window.location.href = "/ai-testing/";
+      }
+
+      // Initialize Tagify
+      const input = document.querySelector("#technologies");
+      const tagify = new Tagify(input, {
+        duplicates: false,
+        maxTags: 50,
+        backspace: "edit",
+        placeholder: "Type technology and press enter",
+        editTags: 1,
+        dropdown: {
+          enabled: 0,
+        },
+      });
+
+      // Initialize AI Suggestions Tagify
+      const aiSuggestionsInput = document.querySelector("#aiSuggestions");
+      const aiSuggestionsTagify = new Tagify(aiSuggestionsInput, {
+        duplicates: false,
+        maxTags: 50,
+        backspace: "edit",
+        placeholder: "AI suggestions will appear here",
+        editTags: 0,
+        dropdown: {
+          enabled: 0,
+        },
+        readonly: true,
+      });
+
+      // Load test screen data
+      async function loadTestScreen() {
+        try {
+          const response = await fetch(`/api/ai-testing/screens/${testId}`);
+          if (!response.ok) {
+            throw new Error('Failed to fetch test screen');
+          }
+          
+          const testScreen = await response.json();
+          
+          // Display job description in textarea
+          document.getElementById("jobDescription").value = testScreen.jobDescription || "No job description available";
+          
+          // Set technologies if they exist
+          if (testScreen.technologies && Array.isArray(testScreen.technologies)) {
+            tagify.addTags(testScreen.technologies);
+          }
+        } catch (error) {
+          console.error("Error loading test screen:", error);
+          document.getElementById("jobDescription").value = "Error loading job description";
+        }
+      }
+
+      // Save technologies
+      async function saveTechnologies() {
+        try {
+          const technologies = tagify.value.map(tag => tag.value);
+          const jobDescription = document.getElementById("jobDescription").value;
+          
+          const response = await fetch(`/api/ai-testing/screens/${testId}`, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+              jobDescription,
+              technologies
+            })
+          });
+          
+          if (!response.ok) {
+            throw new Error('Failed to save changes');
+          }
+          
+          saveToast.show();
+        } catch (error) {
+          console.error("Error saving technologies:", error);
+          errorToast.show();
+        }
+      }
+
+      // Get AI suggestions
+      async function getAISuggestions() {
+        const button = document.getElementById("aiSuggestionsBtn");
+        const spinner = document.getElementById("aiSuggestionsSpinner");
+        
+        try {
+          // Show loading state
+          button.disabled = true;
+          spinner.classList.remove("d-none");
+          
+          // Get the current job description from the textarea
+          const jobDescription = document.getElementById("jobDescription").value;
+          
+          const response = await fetch(`/api/ai-testing/ai-suggestions/${testId}`, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ jobDescription })
+          });
+          
+          if (!response.ok) {
+            throw new Error('Failed to get AI suggestions');
+          }
+          
+          const suggestions = await response.json();
+          
+          if (suggestions && suggestions.length > 0) {
+            // Clear existing suggestions and add new ones
+            aiSuggestionsTagify.removeAllTags();
+            aiSuggestionsTagify.addTags(suggestions);
+            aiTagsToast.show();
+          } else {
+            noSuggestionsToast.show();
+          }
+        } catch (error) {
+          console.error("Error getting AI suggestions:", error);
+          errorToast.show();
+        } finally {
+          // Hide loading state
+          button.disabled = false;
+          spinner.classList.add("d-none");
+        }
+      }
+
+      // Event listeners
+      document.getElementById("saveBtn").addEventListener("click", saveTechnologies);
+      document.getElementById("saveAndPreviousBtn").addEventListener("click", saveAndNavigatePrevious);
+      document.getElementById("saveAndNextBtn").addEventListener("click", saveAndNavigateNext);
+      document.getElementById("aiSuggestionsBtn").addEventListener("click", getAISuggestions);
+
+      // Load test screen when page loads
+      document.addEventListener("DOMContentLoaded", loadTestScreen);
+      
+      // Function to save and navigate to previous test
+      async function saveAndNavigatePrevious() {
+        await saveTechnologies();
+        const currentId = parseInt(testId.split('_')[1]);
+        if (currentId > 1) {
+          window.location.href = `/ai-testing/tag-test-screen-technologies.html?id=Test_${String(currentId - 1).padStart(3, '0')}`;
+        } else {
+          // If we're at the first test, go to the last one
+          window.location.href = `/ai-testing/tag-test-screen-technologies.html?id=Test_100`;
+        }
+      }
+      
+      // Function to save and navigate to next test
+      async function saveAndNavigateNext() {
+        await saveTechnologies();
+        const currentId = parseInt(testId.split('_')[1]);
+        if (currentId < 100) {
+          window.location.href = `/ai-testing/tag-test-screen-technologies.html?id=Test_${String(currentId + 1).padStart(3, '0')}`;
+        } else {
+          // If we're at the last test, go to the first one
+          window.location.href = `/ai-testing/tag-test-screen-technologies.html?id=Test_001`;
+        }
+      }
+    </script>
+  </body>
+</html> 

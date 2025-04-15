@@ -1,0 +1,25 @@
+{
+  "id": "Test_017",
+  "candidateName": "Test 017",
+  "recruiterName": "Test Recruiter",
+  "screenDate": "",
+  "screenTime": "",
+  "jobDescription": "Would you assess his React, Vue and Next JS as well as Node skills in general? Also, Android and React Native.\n\nI am thinking about him for the API Developer today but probably other things as they come in – if your assessment shows him to be solid.\n\nHere’s the API Developer Role:\n\nSeeking a Developer Support and Experience Specialist to join their API development team and ensure that their developer community has the best possible experience with the APIs and tools.\n \nPosition:  API Developer Support and Experience Specialist\n\nDuration: 12 month contract to hire\n\nLocation: Remote\n\nResponsible for providing high-level consulting services to clients and preparing programming assignments. Designs, plans and supervises implementation of complex, large-scale system projects. Reviews, analyzes, and modifies programming systems including encoding, testing, debugging and installing for a complex, large-scale computer system. Assists in supervising the daily activities of the project team members.\n\nRequirements:\n • Bachelor’s degree in Computer Science, Information Technology, or a related field.\n • Strong understanding of APIs, SDKs, and developer tools.\n • Excellent problem-solving skills and the ability to troubleshoot complex technical issues.\n • Exceptional communication and interpersonal skills.\n • Experience with documentation tools and platforms.\n • Familiarity with programming languages such as JavaScript, Python, or Java.\n • Ability to work independently and as part of a team.\n\n Essential Duties and Responsibilities:\n\n• Provides high-level consulting services to client personnel (e.g., advises client on complex issues involving new regulation, technology or system functionality; evaluates various technical and business solutions and makes recommendations to client; troubleshoots errors and inefficiencies related to the application(s) and related processes; advises client on technical direction and specific business issues).\n\n• Maintains project estimates and project management timelines for multiple major projects.\n\n• Verifies completeness and accuracy of specifications for multiple major projects to be estimated (e.g., report changes, control file changes, file fixes).\n\n• Determines programming requirements for multiple major projects (e.g., product updates, conversions).\n\n• Researches and designs system modules, program enhancements and modifications to existing programs or modules.\n\n• Creates documents to communicate complex technical information to audiences of all levels.\n\n• Conducts research and documents findings and recommendations by using analytical problem solving.\n\n• Provides client support, training, testing and vendor relations.\n\n• Develops technical designs that will meet system objectives and minimize the impact on operations.\n\n• Maintains and develops on-line and batch application programs.\n\n• Codes programs that interface with multiple applications.\n\n• Trains new employees on all aspects of an application or system product.\n\n• Develops complex procedural language routines.\n\n• Provides applications development and support and utilizes troubleshooting and diagnostic tools.\n\n• Monitors, measures, and optimizes individual and combined utilization of hardware, software, and telecommunications components.\n\n• Responsible for software installation and maintenance. May act as project leader.\n\n• Develops and implements a disaster recovery plan.\n\n• Performs other related duties as assigned.\n\n 7-10 years with 6-8 years full life cycle development experience and 5-7 years programming and system design experience in financial services or a related industry in directly-related progressively responsible positions; or equivalent combination of education and experience\n\n ",
+  "technologies": [
+    "React",
+    "Vue",
+    "Next.js",
+    "Node.js",
+    "Android",
+    "React Native",
+    "SDKs",
+    "JavaScript",
+    "Python",
+    "Java",
+    "REST APIs"
+  ],
+  "createdAt": "2025-02-13T05:42:09.963Z",
+  "role": "Test Role",
+  "client": "Test Client",
+  "updatedAt": "2025-04-09T06:03:56.462Z"
+}

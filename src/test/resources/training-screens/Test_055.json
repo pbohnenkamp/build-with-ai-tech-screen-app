@@ -1,0 +1,29 @@
+{
+  "id": "Test_055",
+  "candidateName": "Test 055",
+  "recruiterName": "Test Recruiter",
+  "screenDate": "",
+  "screenTime": "",
+  "jobDescription": "Position:   Full Stack Java React Developer\n\nTechnologies:  Java, React, Spring Boot, RESTful web APIs, AWS\n\nDuties and Responsibilities:\n\nAs a Full-Stack Java React Developer, you’ll be creating web-based solutions using best-in-class technologies to solve our clients’ challenges. You’ll tap into your extensive experience with web-based tools and cloud services to take a central role in the construction of intuitive web-based applications. Eager to learn new technologies, earn a certification, and grow your skills?  We wouldn’t have it any other way.  We emphasize skills cultivation, achievement recognition, and employee engagement.  You will be encouraged to try new technologies and step into a new role with the support of an outstanding community of developers and architects with:  \n\nCoding, optimizing, and supporting Java/React web applications.\nPerforming unit, integration, and system testing\nDesigning, implementing, and integrating RESTful web APIs\nCreating elegant user interfaces and digital experiences\nTroubleshooting, support and enhancement of developed applications\nCollaborating with fellow team members to help solve technical challenges they’re facing.\nTaking ownership of individual components within an application\nComplete in-depth peer code reviews following industry best practices to ensure that all code bases remain clean, maintainable, and efficient.\nQualifications:\n\nEducation and Years of Experience: \n\nBachelor's degree in Computer Science, Engineering, Information Systems, or a related field (or equivalent experience)\nRequired and Desired Skills/Certifications:\n\nStrong in the fundamentals of Java / JavaScript programming using modern tools & frameworks\nExtensive experience in developing modern web applications using React, Web technologies (HTML5, CSS3, etc), Java and Spring Boot\nExperience designing, implementing and integrating RESTful web APIs\nProficient in object-oriented development and design patterns\nAble to efficiently implement clean, maintainable, and testable software code\nProficient in developing secure code & solutions (web, cloud, data, etc)\nSkillful in the use of AWS services and serverless technologies\nKnowledge of web development standards & UX best practices\nExperience in test-driven development, unit testing, and clean code\nWorking knowledge of DevOps & automation practices/tools\nExcellent understanding of the entire software development life cycle\nAble to work and thrive in a fast-paced work environment\nInterest in new technologies and high motivation for continuous learning\nOutstanding interpersonal skills, strong work ethic, self-motivated and excellent communication/presentation skills\nAbility to effectively work both autonomously as well as on a team\nAdditional Requirements:\n\nConsulting experience\nDeep background working in an Agile team & methodology to develop software\nCertifications related to AWS, Java, Agile",
+  "technologies": [
+    "Java",
+    "React",
+    "Spring",
+    "Spring Boot",
+    "REST APIs",
+    "AWS",
+    "Unit Testing",
+    "Integration Testing",
+    "System Testing",
+    "JavaScript",
+    "HTML5",
+    "CSS",
+    "Object Oriented Programming (OOP)",
+    "Design Patterns",
+    "Test Driven Development (TDD)",
+    "DevOps"
+  ],
+  "createdAt": "2025-02-13T07:02:01.637Z",
+  "role": "Test Role",
+  "client": "Test Client"
+}

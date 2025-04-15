@@ -1,0 +1,24 @@
+{
+  "id": "Test_039",
+  "candidateName": "Test 039",
+  "recruiterName": "Test Recruiter",
+  "screenDate": "",
+  "screenTime": "",
+  "jobDescription": "Role: C# Developer\nDuration: 6 months (potential extension)\nBill rate: market\nRequired Skills:\nApplicant must have a strong working knowledge of C# programming, with focus on windows forms, or\nwpf design. Experience in sql server and tsql stored procedures and querying is also a requirement.\n \nKnowledge of Microsoft Entity Framework, Sql Server Reporting Services (SSRS), eConnect, and/or\nTeam Foundation Server would all be a plus. Visual Web Gui, or Wise J experience would be excellent\ntools as well, though not required.",
+  "technologies": [
+    ".NET",
+    "C#",
+    "Windows Forms",
+    "Windows Presentation Foundation (WPF)",
+    "SQL",
+    "T-SQL",
+    "Entity Framework",
+    "SSRS",
+    "Team Foundation Server",
+    "Visual Web GUI",
+    "Wise J"
+  ],
+  "createdAt": "2025-02-13T06:22:03.460Z",
+  "role": "Test Role",
+  "client": "Test Client"
+}

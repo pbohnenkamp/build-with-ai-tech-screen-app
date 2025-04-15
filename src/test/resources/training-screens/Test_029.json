@@ -1,0 +1,21 @@
+{
+  "id": "Test_029",
+  "candidateName": "Test 029",
+  "recruiterName": "Test Recruiter",
+  "screenDate": "",
+  "screenTime": "",
+  "jobDescription": "Role : Sr Software Engineer Full Stack (React /.NET core)\n\nDuties and Responsibilities:\nThe Sr. Software Engineer- Full Stack (React / .NET core) will work as a member of an agile software development team that is responsible for building and maintaining custom web applications for Company. The Sr. Software Engineer will participate in agile ceremonies and help facilitate good practices throughout the SDLC.\n• Hands on design and development of applications using technologies such as React, Node & TypeScript\n• Work as a member of an agile software development team\n• Enhance and support existing applications\n• Troubleshoot problems identified by users\n• Collaborate with lead developers and analysts to understand requirements and develop solutions\n• Advocate for adherence to standards on the development team \nEducation and Years of Experience:\n• Bachelor's Degree in Computer Science, Management Information Systems, or a related field.\n• 5+ years of professional software development experience\nRequired and Desired Skills/Certifications:\n• React.js\n• Node.js\n• Next.js\n• .Net\n• SQL\n• Azure/Cloud Experience\n• Git/other source control\n• Strong professional written and verbal communication skills.\n• Strong analytical and problem-solving skills.\n• Experience working with agile methodologies.\nMin Citizenship Status Required: None\nPhysical Requirements: No Physical requirement needed for this position.",
+  "technologies": [
+    "React",
+    ".NET",
+    "Node.js",
+    "TypeScript",
+    "Next.js",
+    "SQL",
+    "Microsoft Azure",
+    "JavaScript"
+  ],
+  "createdAt": "2025-02-13T05:47:10.584Z",
+  "role": "Test Role",
+  "client": "Test Client"
+}

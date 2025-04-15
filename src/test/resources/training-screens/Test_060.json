@@ -1,0 +1,22 @@
+{
+  "id": "Test_060",
+  "candidateName": "Test 060",
+  "recruiterName": "Test Recruiter",
+  "screenDate": "",
+  "screenTime": "",
+  "jobDescription": "We're seeking an exceptional Applied AI/ML Engineer to join our founding team. If you want to bring AI to the real-world and deliver immediate value to businesses and customers nationwide, we would love to chat!\n\n\n\nResponsibilities:\n\nArchitect, build, and maintain real-time conversational AI systems to deliver exceptional accuracy for our automated order taker\nConduct applied research on new customer-facing challenges we encounter\nLead product adoption of the latest in generative AI and machine learning research\nWork closely with our customers and analyze data to continuously improve model performance and the customer experience\nImplement machine learning best practices, ensuring maintainability of ML systems in production\nContribute to the overall technology stack and participate in other technical projects as needed\n\n\nRequirements:\n\nStrong Python and production-level software engineering expertise\nDeep understanding of LLMs, prompt engineering, and modern NLP\nProficiency with Kotlin or Java\nTrack record deploying ML systems to real-world applications\nTrack record of solving complex technical challenges in ambiguous environments\nStrong collaboration and communication skills, both with team members and external stakeholders \nEmpathy for users and a bias towards taking a customer-centric approach to product development and decision making\n\n\nNice-to-haves:\n\nExperience with Automatic Speech Recognition (ASR)\nHands-on experience in real-time or low-latency systems\nWorking knowledge of TypeScript\nDemonstrated ability building with open source LLMs\n",
+  "technologies": [
+    "Python",
+    "Large Language Models (LLMs)",
+    "Natural Language Processing (NLP)",
+    "Kotlin",
+    "Java",
+    "Machine Learning (ML)",
+    "Automatic Speech Recognition (ASR)",
+    "JavaScript",
+    "TypeScript"
+  ],
+  "createdAt": "2025-02-13T07:05:06.710Z",
+  "role": "Test Role",
+  "client": "Test Client"
+}

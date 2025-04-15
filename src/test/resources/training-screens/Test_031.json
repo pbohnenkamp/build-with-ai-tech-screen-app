@@ -1,0 +1,26 @@
+{
+  "id": "Test_031",
+  "candidateName": "Test 031",
+  "recruiterName": "Test Recruiter",
+  "screenDate": "",
+  "screenTime": "",
+  "jobDescription": "Title:   Software Engineer- React Native II\n\nStart/Duration: 6 month contract to hire   \n\nLocation:  Remote  \n\n About the Role:\n\nThe React Native Engineer plays a critical role in delivering innovation and growth for the Banking Solutions business by contributing to the technical direction and execution of our mobile retail banking applications. You will be responsible for collaborating with a team of engineers to develop code that supports The Company's business goals, and for participating in code reviews to ensure code quality, performance, and security. Your technical knowledge and collaboration will help drive the success of our retail application projects and contribute to the overall growth of our company.\n\nWhat you will be doing:\n\n· Develop mobile applications within the Digital domain, ensuring alignment with business goals, security standards, and regulatory requirements.\n· Implement scalable, robust, and maintainable mobile application code that supports a wide range of financial services and functionalities.\n· Collaborate with product managers, UX/UI designers, backend developers, QA and other stakeholders to understand business requirements and implement technical solutions.\n· Support transition of Angular Ionic codebase to React Native.\n· Implement features with quality and ensure that critical customer-impacting issues are remediated with urgency.\n· Participate in code reviews and provide technical feedback to team members to ensure adherence to coding standards and best practices.\n· Accept and address code review feedback on your own code contributions.\n· Support continuous improvement / delivery initiatives in mobile application development processes, tooling, and automation to enhance efficiency, quality, and time-to-market.\n· Communicate complex technical concepts and technical decisions effectively to stakeholders, including peers, team members and senior management.\n· Stay up to date with industry trends, emerging technologies, and regulatory changes in the FinTech sector.\n\nWhat you will need:\n\n· Experience developing mobile applications for iOS and Android platforms, particularly within the financial technology (FinTech) domain.\n· Proficiency in React Native, Angular and Ionic Capacitor\n· Experience transitioning a codebase from Angular Ionic to React Native would be a huge positive.\n· Knowledge of secure coding practices, encryption algorithms, and data protection mechanisms relevant to handling sensitive financial data in mobile applications.\n· Familiarity with APIs, and microservices architecture, enabling seamless integration between apps and backend systems.\n· Experience measuring mobile application performance to help drive a responsive user experience.\n· Understanding of financial services industry regulations, compliance requirements (e.g., GDPR, PCI DSS), and security standards related to mobile app development.\n· Experience working on FinTech projects such as mobile banking apps, investment platforms, payment gateways, or financial analytics tools, with a focus on usability, security, and innovation.\n· Experience contributing to a white label mobile application that is branded and released for multiple clients.\n· Experience collaborating with India-based development teams\n· Preferred degree in Engineering, Computer Science, or similar relevant field\n· Understanding of software engineering principles and processes (e.g., Lean, Agile, DevOps) and continuous improvement through measurement.\n\nNice to have:\n\n· Demonstrates judgment and flexibility - positively deals with a shifting demand for time, priorities, and the rapid change of environments.\n· Takes an ownership approach to engineering and product outcomes.\n· Action-oriented self-starter who can “roll up their sleeves” to get things done.\n· Excellent communication skills to work effectively with all stakeholders (internal & external) and make information-based decisions.\n· Penchant for excellence, both personally and professionally, demonstrated by intellectual curiosity, record of accomplishment, and reputation; shows strong attention to detail and implementation of best practices with an inclination for continuous improvement.\n· Ability to quickly establish strong credibility with team members.\n· Full stack web development experience in React, Angular, and/or Node.",
+  "technologies": [
+    "React",
+    "React Native",
+    "iOS",
+    "Android",
+    "Angular",
+    "Ionic Capacitor",
+    "Microservices",
+    "DevOps",
+    "Node.js",
+    "JavaScript",
+    "TypeScript",
+    "Rest APIs",
+    "Encryption"
+  ],
+  "createdAt": "2025-02-13T06:01:03.663Z",
+  "role": "Test Role",
+  "client": "Test Client"
+}

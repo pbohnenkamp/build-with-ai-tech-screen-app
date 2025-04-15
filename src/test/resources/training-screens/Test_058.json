@@ -1,0 +1,16 @@
+{
+  "id": "Test_058",
+  "candidateName": "Test 058",
+  "recruiterName": "Test Recruiter",
+  "screenDate": "",
+  "screenTime": "",
+  "jobDescription": "This is a full-time on-site role for a Web Developer at SpaceMade located in St. Petersburg, FL. The Web Developer will be responsible for back-end web development, front-end development, web development, programming, and web design.\n\n Qualifications\n \nBack-End Web Development and Programming skills\nFront-End Development and Web Design skills\nExperience in Web Development\nKnowledge of programming languages like HTML, CSS, JavaScript, and Python\nStrong problem-solving and analytical skills\nAbility to work collaboratively in a team environment\nBachelor's degree in Computer Science or related field\n\n",
+  "technologies": [
+    "CSS",
+    "JavaScript",
+    "Python"
+  ],
+  "createdAt": "2025-02-13T07:04:13.178Z",
+  "role": "Test Role",
+  "client": "Test Client"
+}

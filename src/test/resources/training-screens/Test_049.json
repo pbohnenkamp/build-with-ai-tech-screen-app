@@ -1,0 +1,24 @@
+{
+  "id": "Test_049",
+  "candidateName": "Test 049",
+  "recruiterName": "Test Recruiter",
+  "screenDate": "",
+  "screenTime": "",
+  "jobDescription": "Position:  Web Application Architect / Technical Lead\n\nTechnologies: JavaScript, .NET MVC, C#\n\n Top Skills:\n\nJavaScript – strong technical mastery is mandatory - 8 years\n.NET MVC with C# - 8 years\nFull stack development - 8 years\nSolid Test-Driven Development (TDD) experience - 2 years\nPrior experience building and supporting Collection-focused web applications, such as Benefits Recovery Investigation Tracking System, is required.\nExperience with SQL Server is required.\nTechnologies: JavaScript, .NET MVC, C#, Crystal Reports, Telerik, IIS, SQL Server, Jira, Kendo, Collection-focused web applications, TDD\n \nJob Description:  \n\nThe web application architect will work closely with the project manager, development team, and the application development technical advisor to deliver valuable products that meet the partners business objectives. Work includes developing new web applications, enhancing existing applications, and providing maintenance of modernized web applications. New web application development is largely focused on adding new functionality and eliminating legacy main frame applications by developing new application(s).\n\nWill implement complex application design and get up to speed on business, technical, and functional requirements quickly.  Is expected to work with minimal supervision, have strong communication and leadership skills, and be a team player. Hands on technical expertise and development is required.\n\n \n\nKey responsibilities:\n\nProvide architectural and big picture oversight for development of new or enhanced software products.\nEnsure quality and consistency of the software architecture across the system and providing day-to-day technical guidance to the development teams.  \nWriting code and reviewing the code of others on the team, participate in cross team code reviews.\nPromote and follow TDD.\nDefine and document the system, technical, and application architectures for major areas of development.\nThe AA will lead the team to web applications that:\nAre cost effective and minimize technical debt.\nAre sustainable and stable.\nFollow security best practices and comply with The Company's security policies and DCF web application standards.\nWrite technical design documents.\nMentor others on the team and in the section.\nUnderstand infrastructure and development architecture designs and issues.\nResearch and implement best frameworks/capability models that will control costs, provide higher quality, and/or increase predictability of service delivery.\nWork with project manager and web application development technical advisor to research and discuss new technology and development tools to remain abreast of current and emerging technology.\n",
+  "technologies": [
+    "JavaScript",
+    ".NET",
+    "ASP.NET MVC",
+    "C#",
+    "Test Driven Development (TDD)",
+    "SQL",
+    "Crystal Reports",
+    "Telerik",
+    "IIS",
+    "SQL Server",
+    "Kendo"
+  ],
+  "createdAt": "2025-02-13T06:46:30.994Z",
+  "role": "Test Role",
+  "client": "Test Client"
+}

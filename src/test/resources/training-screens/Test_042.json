@@ -1,0 +1,24 @@
+{
+  "id": "Test_042",
+  "candidateName": "Test 042",
+  "recruiterName": "Test Recruiter",
+  "screenDate": "",
+  "screenTime": "",
+  "jobDescription": "Role: Software Developer, C++\n \nTeam is responsible for acquiring data from the CT scanner and reconstructing CT images. Involves developing\nalgorithms and high performance computing on GPUs. Product uses Linux operating systems.  Mostly using C++ and\nOpenCL for development.\n \nTeam: 17 engineers onsite, have global teams onsite.\n \nSkills requirement: Experience with C++ and exposure to Linux.  GPU processing (for ex. CUDA is a plus)\n  \nDegree: Prefers computer science or computer engineering.  Biomedical engineering would be acceptable if there is good\nprogramming experience.\n \nBackground info:  We are responsible for CT Image reconstruction, which involves high performance computing, algorithm\ndevelopment and performance optimization. \n \nJob description:\nThe team developing The Company's industry leading CT scanners is looking for highly motivated software engineers to join\nthem to develop the next generation of CT scanners.\nSoftware Engineers will be working on CT image reconstruction team using state-of-the-art “compute” and\nsoftware platforms.\n \nIn this role you will:\n·         Participate in developing and testing CT image reconstruction software, utilizing latest high-performance\ncomputing hardware (GPGPU/multicore CPU) and software technologies\n·         Experimenting with emerging high performance computing technologies to optimize CT algorithm\nperformance\n·         Collaborate with cross-functional teams to translate CT image reconstruction algorithms into product\nsoftware\n\n \nRequired qualifications:\n·         C++, Linux OS, Familiarity with OOP, design patterns,\n·         Strong analytical and problem-solving skills\n \n\nDesired qualifications:\n·         Familiarity with GPU technologies.  CUDA and/or OpenCL\n·         Familiarity with python and Linux shell scripting\n·         Strong math background",
+  "technologies": [
+    "GPU Programming",
+    "Linux",
+    "C++",
+    "OpenCL",
+    "CUDA",
+    "Algorithms",
+    "Design Patterns",
+    "Python",
+    "Shell Scripting",
+    "Object Oriented Programming (OOP)"
+  ],
+  "createdAt": "2025-02-13T06:31:53.513Z",
+  "role": "Test Role",
+  "client": "Test Client",
+  "updatedAt": "2025-04-09T05:33:29.463Z"
+}

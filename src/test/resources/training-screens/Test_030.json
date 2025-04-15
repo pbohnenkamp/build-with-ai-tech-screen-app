@@ -1,0 +1,26 @@
+{
+  "id": "Test_030",
+  "candidateName": "Test 030",
+  "recruiterName": "Test Recruiter",
+  "screenDate": "",
+  "screenTime": "",
+  "jobDescription": "Our Digital advertising agency client is looking for a Lead Developer to join their team on a full-time permanent hire basis. \n\nThis individual will be working on a variety of initiatives and could be involved in creating an engaging interactive experience as well as well optimized landing pages, improving accessibility and/or developing custom web applications.  This role will have a direct impact on what our client creates and its ultimate success as a company.\n\nOther responsibilities will include:\n\nOwn success of your projects\nLead team of developers to success \nCraft technical solutions\nBe an active developer on team\nStart projects from scratch as well as maintain existing projects\nDevelop in Magnolia CMS and other content management system\n\nThe ideal candidate will have experience with the following: \n\nMultiple years of experience including modern Java in a professional environment\nThey will consider a backend or a Full-Stack developer, but this individual must have a lot of team leadership experience.\nExperience working on high-end CMS projects (other than WordPress).        Experience with AEM (Adobe Experience Manager) is highly preferred.  \nExperience leading development teams\nProven success leading projects in digital marketing\nAbility to engage with your team including both technical and non-technical members\nAbility to lead peers & clients to success\nUse Git and related branching model workflows\nModern JavaScript & related tools\nPostCSS, SASS and CSS\nTailwindCSS, React, and/or Angular\nKnowledge of architecture diagrams\nSpring/Boot\nHigh level understanding of modern web infrastructure\nAbility to work on multiple projects\nAbility to communicate clearly and concisely with clients, sales team, designers, and developers\nA desire to lead and make technology choices\nLooking for candidates with past Digital Marketing agency experience.  ",
+  "technologies": [
+    "Content Management Systems",
+    "Magnolia CMS",
+    "Java",
+    "Adobe Experience Manager",
+    "JavaScript",
+    "PostCSS",
+    "SASS",
+    "CSS",
+    "TailwindCSS",
+    "React",
+    "Angular",
+    "Spring Boot",
+    "Spring"
+  ],
+  "createdAt": "2025-02-13T05:50:16.547Z",
+  "role": "Test Role",
+  "client": "Test Client"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "Test_004",
+  "candidateName": "Test 004",
+  "recruiterName": "Test Recruiter",
+  "screenDate": "",
+  "screenTime": "",
+  "jobDescription": "Software Test Developer:\n\nLocation:  Remote\n\n Responsibilities\n\nWorking closely with developers to create and maintain tests across AI projects\nCreate automated test pipelines in GitHub\nCreate and design dedicated testing projects (in C# or Python)\nAid in the curation of test data\nCreate unit/api tests for different system components\nCreate integration tests between different system components\nCreate automated performance tests for system components\nUpdate existing components to make them more testable\nMonitor, report on and increase test coverage across the codebase\nParticipate in team sprints, standups, and other agile activities\nTech Experience\nRequired\nC# - .NET 8+ (MSTest unit testing framework)\nPython 3.12+ (Pytest unit testing framework)\nMocking of classes, databases, services\nGitHub Actions\nExperience with a variety of testing frameworks\nExperience in testing methodologies of system component functionality and performance\nExperience with Visual Studio and VS Code\nRecommended\nExperience with AWS (Lambda, Cognito, CloudWatch, Aurora, Bedrock, VPC)\nExperience with Angular 18+ & Typescript\nTo be clear, this wouldn’t be a traditional role of “automating QA test cases” – it would be working much more closely with the development team to create tests at the code level.",
+  "technologies": [],
+  "createdAt": "2025-02-12T05:37:32.945Z",
+  "role": "Test Role",
+  "client": "Test Client",
+  "updatedAt": "2025-04-09T06:03:41.327Z"
+}

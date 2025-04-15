@@ -1,0 +1,30 @@
+{
+  "id": "Test_035",
+  "candidateName": "Test 035",
+  "recruiterName": "Test Recruiter",
+  "screenDate": "",
+  "screenTime": "",
+  "jobDescription": "\nJob Description -\n\nOur mission is to build a fabulous and efficient experience for our Workplace Portal environments. We are looking for dynamic and talented Senior software engineer to join Workplace Portals Engineering focusing on .NET Core and JavaScript development and application support. You will be working on a high impact modernization effort building an application that delivers value to our field force.  The ideal candidate is a front end developer with an expertise in React and/or Next.js frameworks. \n\n \n\nPrimary Duties & Responsibilities \n\nDevelop and deploy applications following the software development life cycle \nTroubleshoot and resolve technical issues that may arise during the development and deployment of software projects \nConduct thorough code reviews to ensure compliance with established coding standards and best practices \nHas an evolving understanding of system-wide architectural challenges \nContribute to technical discussions and decision-making processes within the team \nMay take on a mentoring role and provide guidance and support to junior technical talent \nRecommend efficiencies to current established development and continuous integration practices \nQualifications \n\nBachelor’s Degree or equivalent experience \n6+ years professional application development experience \n6+ years of experience working with modern engineering tools, languages and practices \nProven track record of delivering significant and impactful technology solutions \n3+ years’ professional experience with a JavaScript framework (React and NextJS), ES6, NodeJS, Redux, RESTful services \nExperience working with HTML and CSS \nExperience with cloud-based development, including PaaS and SaaS, and Docker and/or Kubernetes \nExposure to and understanding of CICD pipelines \nExposure/Understanding of automated testing concepts: unit testing and Test-Driven Development \nAbility to communicate effectively to both technical and non-technical audiences \nUnderstanding of design patterns and architecture \nNice to Haves:  \n\n2+ years’ professional experience with .NET Core development and/or Java development \nExperience developing in a Content Management System (CMS), specifically Optimizely \nHave a passion for operational excellence, problem-solving, and ownership in accomplishing challenging goals ",
+  "technologies": [
+    ".NET",
+    "JavaScript",
+    "React",
+    "Next.js",
+    "Node.js",
+    "Redux",
+    "REST APIs",
+    "CSS",
+    "Docker",
+    "Kubernetes",
+    "Unit Testing",
+    "Test Driven Development (TDD)",
+    "Java",
+    "Content Management Systems",
+    "Optimizely",
+    "Design Patterns",
+    "System Architecture"
+  ],
+  "createdAt": "2025-02-13T06:12:33.315Z",
+  "role": "Test Role",
+  "client": "Test Client"
+}

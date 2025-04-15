@@ -1,0 +1,25 @@
+{
+  "id": "Test_013",
+  "candidateName": "Test 013",
+  "recruiterName": "Test Recruiter",
+  "screenDate": "",
+  "screenTime": "",
+  "jobDescription": ".Net entry to mid-level experience\nCandidate Profile: Experience implementing systems based on direction from team leaders. .NET Generalist with strong preference for experience writing/using web services.\nSolid understanding on Mircosoft Azure, especially Logics Apps and Functions\nPreferred: C#, TSQL, Web APIs, SQL Server Integration Services, Git\nExperience with Extract Transform Load apps.\nStrong SQL skills\nExperience with Test Driven Development\nExperience in Web development\nExposure to Entity Framework or other ORM\nQualities Needed: Good communicator who wants to work in a team environment, comfortable performing pair programming\nAnalytical – not afraid to dive into complex code and data to troubleshoot issues\nCreative problem solver who is automation focused. Comfortable working in an agile environment. Prefer experience working in agile",
+  "technologies": [
+    ".NET",
+    "C#",
+    "T-SQL",
+    "SSIS",
+    "ETL",
+    "SQL",
+    "Test Driven Development (TDD)",
+    "Entity Framework",
+    "Microsoft Azure",
+    "Azure Logic Apps",
+    "Azure Functions"
+  ],
+  "createdAt": "2025-02-12T05:34:47.554Z",
+  "role": "Test Role",
+  "client": "Test Client",
+  "updatedAt": "2025-04-09T06:54:04.871Z"
+}

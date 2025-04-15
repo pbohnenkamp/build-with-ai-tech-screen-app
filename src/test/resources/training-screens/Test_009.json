@@ -1,0 +1,13 @@
+{
+  "id": "Test_009",
+  "candidateName": "Test 009",
+  "recruiterName": "Test Recruiter",
+  "screenDate": "",
+  "screenTime": "",
+  "jobDescription": "Title:  Java Developer  \n\n\n\n\nPosition Overview:\n\nA highly skilled Java-J2EE developer with solid object oriented  experience\nShould be up-to-date with current technologies and leading design patterns\nParticipate in a variety of planning and development activities\nResponsible for developing prototypes, unit test cases, design artifacts\nEnsure that the application components are built to the highest standards across the application lifecycle with a constant focus on process improvement through unit testing automation\nStrong knowledge on Core Java, Spring(Core, MVC, JDBC), Hibernate/JDBC/JPA/ORM, JSON \n3+ Year Experience in Java (Core & EE,Spring, JMS,Junit)\nMust have experience and in-depth knowledge of SQL and RDBMS, should be able to write and understand SQL queries, stored procedure, index and triggers. MySql experience is a plus \nProfessional written and verbal communication skills and demonstrated ability to work in geographically dispersed teams that focus on high accountability of ownership.\nGood analytical, debugging and problem solving skills.\nExperience working in a fast paced, delivery oriented financial services area using agile practices, coupled with regulatory and digital transformation established deadlines\nExperience with AWS is a plus\nMinimum of 4 years Java development experience\n \n\nMust Have:\n\nCore Java\ncustom SQL programming\nMySQL\nSpring Boot\n \n\nNice to Have:\n\nAbility to work independently.\nAbility to work with a team. Attention to detail. May work under pressure at times\nAchieved AWS Cloud certification\nAnalytical and Problem Solving Skills\n \n\nSecond role:\n\nTitle:    Software Engineer \n\nResponsibilities:\n\nDevelop microservices using Java, Spring Boot, Angular, or other programming languages, adhering to industry best practices and The Company's coding standards.\nDevelop and execute unit, component and integration tests, using Cypress and/or Cucumber, to verify the engineering work meets requirements\nDocument design decisions, design patterns, and implementation details related to the engineering work\nSoftware development adhering to SDLC including requirements discovery, design, verification, product delivery and maintenance\nExecution of manual test procedures\nTroubleshooting of failed tests or other software bugs\nParticipates in Agile ceremonies as a member of a scrum team\n ",
+  "technologies": [],
+  "createdAt": "2025-02-13T06:29:49.358Z",
+  "role": "Test Role",
+  "client": "Test Client",
+  "updatedAt": "2025-04-09T06:27:44.289Z"
+}

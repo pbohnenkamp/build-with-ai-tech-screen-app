@@ -1,0 +1,25 @@
+{
+  "id": "Test_022",
+  "candidateName": "Test 022",
+  "recruiterName": "Test Recruiter",
+  "screenDate": "",
+  "screenTime": "",
+  "jobDescription": "Title:  Software Engineer\n\nCompany is seeking a Senior Software Engineer to join our growing team. A critical role and force multiplier, this Engineer is an integral member of the team responsible for technical mentoring, collaboration and building proof of concepts. In addition, they will design and architect complex systems and solutions to support the organization's mission and goals. and develop the company's software applications.\n\nKey Responsibilities:\n\nPartner with technology leaders to define the technical direction of the organization and make decisions about technology stacks, frameworks, and tools.\nDevelop innovative solutions to challenging technical problems by optimizing code, improving performance, or resolving critical technical issues.\nLead development as a hands-on engineer by building proof of concepts, pilots and other critical solutions.\nCreate a technology blueprint for other team members to adopt and follow.\nLead code reviews to ensure code quality, maintainability, and adherence to best practices.\nProvide feedback to other engineers and help maintain coding standards.\nCollaborate with cross-functional teams, including product managers, designers, and data scientists, to ensure that technical solutions align with the overall product and business goals.\nResponsible for evaluating the feasibility and potential impact of new and innovative technologies and tools that could benefit the startup.\nEnsure that systems can scale to meet growing demand and perform efficiently.\nRefactor or restructure the codebase to improve maintainability and reduce technical debt to support organizational growth.\nContribute technical documentation to ensure that the codebase and architecture are well-documented for current and future team members.\nHelp identify, hire, develop and retain the best talent in the industry\nEmbody the values of Trust, Customer Success, Innovation, and Respect\nProvide technical leadership, mentorship, and guidance to junior engineers, helping them grow and develop their skills.\n \nRequirements:\n\nBachelor’s degree in computer science, management information systems, or a closely-related field.\nMinimum of 10 years of experience in software engineering, 5+ years of engineering leadership with a focus on web-based systems and data engineering.\nDemonstrated experience in building software solutions from scratch, scaling them with growth and integration with off-the-shelf software.\nProficient with React, Java, Node.js, JavaScript, Python and SQL or other equivalent tech stacks.\nDemonstrated experience with cloud services (e.g. Amazon AWS) and related infrastructure, REST APIs and data pipelines.\nProven experience in designing and developing scalable engineering solutions and a record of accomplishment of collaboration with product and design teams.\nProficiency in agile development methodologies, SDLC tooling and Dev Ops.\nAbility to thrive in a fast-paced environment.\nExperience in healthcare or digital health preferred.\n ",
+  "technologies": [
+    "React",
+    "Java",
+    "Node.js",
+    "JavaScript",
+    "Python",
+    "SQL",
+    "AWS",
+    "REST APIs",
+    "Data Pipelines",
+    "DevOps",
+    "System Architecture"
+  ],
+  "createdAt": "2025-02-12T06:06:52.569Z",
+  "role": "Test Role",
+  "client": "Test Client",
+  "updatedAt": "2025-04-09T05:30:53.403Z"
+}

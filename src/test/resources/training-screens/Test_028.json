@@ -1,0 +1,29 @@
+{
+  "id": "Test_028",
+  "candidateName": "Test 028",
+  "recruiterName": "Test Recruiter",
+  "screenDate": "",
+  "screenTime": "",
+  "jobDescription": "Job Title: Senior Software Developer\nLocation: 100% Remote\nType: Contract or Contract-to-Hire (Long-Term Opportunity)\nIndustry: Healthcare, AI, Radiology\nAbout Our Client:\nThey are seeking multiple Senior Software Developers to join their team as they ramp up their AI initiatives\nand work on cutting-edge solutions in the healthcare space. As a key player in the healthcare technology sector, you’ll\nbe part of a growing team supporting clinical research, AI development, and deployment of innovative solutions to over\n2,500 physicians.\nJob Overview:\nWe are looking for multiple Senior Software Developers to join our client's dynamic team. This is a great opportunity for\nindividuals with strong experience in .NET, C#, cloud technologies, and a passion for AI and healthcare solutions. The\n\nrole is 100% remote, and the client is firm on converting contract developers into permanent team members for long-\nterm success.\n\nKey Responsibilities:\n• Develop, implement, and maintain complex software applications using C# and .NET 8+.\n• Work with PostgreSQL and Entity Framework Core to manage and interact with databases.\n• Collaborate with cross-functional teams to design, develop, and deploy AI-driven solutions for healthcare\napplications.\n• Leverage AWS services such as Lambda, Cognito, CloudWatch, Aurora, Bedrock, and VPC for cloud-based\napplication development.\n• Contribute to the growth and maintenance of the client’s platform and software systems.\n• Participate in code reviews and ensure adherence to best practices for development and testing.\n• Continuously improve and optimize software solutions for scalability, security, and performance.\nRequired Skills and Experience:\n• Strong proficiency in C# and .NET 8+ development.\n• Expertise in PostgreSQL and Entity Framework Core for database management.\n• Experience with GitHub for version control and collaboration.\n• Solid understanding of cloud computing, particularly AWS services such as Lambda, Cognito, CloudWatch,\nAurora, Bedrock, and VPC.\nPreferred Skills:\n• Experience with Angular 18+ for front-end development.\n• Proficiency in Python 3.12+ for additional backend development needs.\n• Familiarity with AI development and applications, especially in healthcare.\nNice to Have:\n• Prior experience in healthcare software or clinical research environments.\n• Exposure to AI technologies and machine learning frameworks.\nWhy Join Us:\n• Work with a rapidly expanding, cutting-edge healthcare company at the forefront of AI innovation.\n• Be part of a dynamic and collaborative team with opportunities for long-term growth.\n• Fully remote work environment providing flexibility and work-life balance.\n• Opportunity to transition from contract to permanent employment with a high-growth company.",
+  "technologies": [
+    ".NET",
+    "C#",
+    "PostgreSQL",
+    "SQL",
+    "Entity Framework",
+    "AWS",
+    "AWS Lambda",
+    "AWS Cognito",
+    "AWS CloudWatch",
+    "AWS Aurora",
+    "AWS Bedrock",
+    "AWS VPC",
+    "Angular",
+    "Python",
+    "Machine Learning (ML)"
+  ],
+  "createdAt": "2025-02-12T05:49:39.668Z",
+  "role": "Test Role",
+  "client": "Test Client",
+  "updatedAt": "2025-04-09T05:29:40.643Z"
+}

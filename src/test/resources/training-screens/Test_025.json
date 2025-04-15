@@ -1,0 +1,31 @@
+{
+  "id": "Test_025",
+  "candidateName": "Test 025",
+  "recruiterName": "Test Recruiter",
+  "screenDate": "",
+  "screenTime": "",
+  "jobDescription": "Summary:\n\nThis role will support our Finance and HR groups. Please note that there is an on-call rotation in scope. We expect 5 weeks of being on call throughout the year.\n\n Technical/Candidate Profile:\n\nB.S. in Computer Science, Computer Engineering, or Software Engineering is preferred, but we would love equivalent experience too.\nPassion for software development with diverse experience including new development, support and maintenance.\nMinimum of 3 years demonstrated experience with Microsoft stack working across tiers (Object-Oriented design, C#, MVC, ASP, .NET, Web API, T-SQL, RESTful services, OAuth 2.0, Azure and Power BI)\nStrong back-end development skills with experience in C#\nStrong experience working with SQL Server and other database technologies.\nExperience with Power Automate, Python, Alteryx and/or Azure preferred. \nAbility to work collaboratively with internal clients, business analysts, project managers and other developers to elicit requirements and successfully implement software projects.\nCreative problem solver who is automation focused – success in reducing recurring work and automation to train users for self-service.\nQuality focused, motivated by small quick wins and process improvement.\nComfortable working in an Agile/Lean development environment, successfully collaborating within and across teams.\nSharePoint development experience a plus.\nWillingness to participate in on-call support.\nComfortable working in an Agile/Lean development environment, successfully collaborating within and across teams.\nData integration experience a plus.\n \n\nQualities Needed:\n\nDevelop and build new solutions using a variety of technologies (full .NET stack, JavaScript frameworks, SQL, & PowerShell)\nAnalyze, design, and refactor business applications to bring them up to current standards\nMaintain integrity of high-level design and architecture by participating in pairing and design/code reviews\nIdentify and implement problem resolutions and perform system and risk analysis\nParticipate in application reviews to help drive accurate and complete support documentation\nFocus on automated testing and continuous delivery\nWork with team members and key stakeholders to develop high level project estimates and creation of test plans\nPartner with project teams to translate business and functional requirements into technical design\nSeek out and apply new technologies and skills in daily work through conferences, online training, reading, participation in organizations and user groups, etc.\nParticipate in lunch and learns and other open learning opportunities to help further your craft\n",
+  "technologies": [
+    "Object Oriented Programming (OOP)",
+    "C#",
+    "ASP.NET MVC",
+    ".NET",
+    "T-SQL",
+    "REST APIs",
+    "OAuth 2.0",
+    "Microsoft Azure",
+    "Power BI",
+    "SQL",
+    "Power Automate",
+    "Python",
+    "Alteryx",
+    "JavaScript",
+    "PowerShell",
+    "SharePoint",
+    "Test Automation"
+  ],
+  "createdAt": "2025-02-13T05:35:26.065Z",
+  "role": "Test Role",
+  "client": "Test Client",
+  "updatedAt": "2025-04-09T05:31:16.945Z"
+}

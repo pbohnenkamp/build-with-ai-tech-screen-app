@@ -1,0 +1,411 @@
+{
+  "technologies": {
+    "Java": [
+      "By default, when parameters are passed into a function in Java, are they passed by value or by reference? Can this behavior be changed?",
+      "When two object variables are being compared using the \"==\" operator, what is being compared?",
+      "If I want to add business logic to determine if two objects are equal, what is the standard \"Java\" way of doing this?\n  override the .equals() method",
+      "What is the difference between an interface and an abstract class?",
+      "Java has a feature called generics; what are generics and how are they useful?",
+      "Do you have experience using the Java Streams API? If so, what is the difference between the .map() and .foreach() function?",
+      "Java has two interfaces for dealing with multi-threading, Runnable and Callable. Compare and contrast them.",
+      "What is the Future class do in Java?",
+      "What are lambda expressions in Java? What are the scope rules regarding the use of local variables in the enclosing scope?",
+      "Have you ever used the Lombok library, for what?",
+      "What unit testing libraries have you used for your Java code?"
+    ],
+    "Spring": [
+      "Spring has a feature called Dependency Injection. What is DI and what types of DI does Spring support?",
+      "When creating beans to be used in DI, they get a \"scope\" attached to them. What are the different scopes supported by Spring and what is the default?"
+    ],
+    "Spring Boot": [
+      "Walk through all the pieces of Spring/Spring Boot that you need to respond to a typical RESTful endpoint.\n  Controller, routing, params, return type, validation, middleware",
+      "How do you unit test endpoints? What are ways to make the testing easier?"
+    ],
+    "SQL": [
+      "What is the difference between an inner and an outer join?",
+      "How do you model a one-to-many relationship in an RDBMS? Use Courses to Professors example if needed.",
+      "How do you model a many-to-many relationship in an RDBMS? Use Courses to Students example if needed.",
+      "What are the typical types of indexes you would use for RDBMS tables?"
+    ],
+    "JavaScript": [
+      "JavaScript has two equals operators, \"==\" and \"===\" what is the difference?",
+      "JavaScript has a feature called closures, what are they?",
+      "JavaScript code often utilizes the Callback software design pattern. What is it and why is it so prevalent?",
+      "Describe the runtime model of JavaScript, the event loop.",
+      "What is a promise?",
+      "What does the async keyword do?",
+      "What kind of unit testing have you done with JavaScript code? What libraries?"
+    ],
+    "Node.js": [
+      "What is NPM?",
+      "What is the package.json file for?",
+      "What are the dependency types allowed in a package.json file?",
+      "What is the package-lock.json file and should it be checked into source control?"
+    ],
+    "React": [
+      "What is the difference between a controlled and uncontrolled component?",
+      "When writing JSX, sometimes you have to add a \"key\" property. When do you have to do this and why?",
+      "When creating components, do you write functional style or class style components?",
+      "I have a controlled component where the next state value depends on the value of the previous state value. What is the correct way to implement this with the useState hook?",
+      "I want to have some logic in a component be called only once at the beginning of the component's lifecycle. How would I do this with the useEffect hook?",
+      "Have you ever used a shared state management library in your React app?\n  Look for Redux/Zustand/Context...",
+      "Explain the parts of Redux.\n  Store, Dispatch, Action, Reducer, Selector, useSelector",
+      "How do you unit test your React components?"
+    ],
+    "Next.js": [
+      "Next.js prescribes a specific directory structure for your project, describe it.\n  Pages, routing, dynamic routing, services"
+    ],
+    "Nx": [
+      "What is the Nx library for? What are the benefits?"
+    ],
+    "Agile": [
+      "Have you use Agile for SDLC methodology? What flavor?",
+      "How do you estimate? Story points? T-shirt sizes?",
+      "What software have you used to manage your requirements and progress?"
+    ],
+    "Git": [
+      "What Git branches models are you most familiar with?"
+    ],
+    "DevOps": [
+      "Have you created and/or managed a CI/CD pipeline? If so, what technology or tools did you use?"
+    ],
+    "CI/CD": [
+      "Are there any CI/CD pipelines that run when your code is checked in PR is merged?",
+      "What tools or technologies? Did you manage the configuration of them?"
+    ],
+    "CSS": [
+      "What is the CSS Box Model?",
+      "What is a CSS Selector?",
+      "What is the Selector Specificity?",
+      "What CSS layout modes are you familiar with?"
+    ],
+    "UX Component Libraries": [
+      "What UX Component Libraries have you used professionally?"
+    ],
+    "Vitest": [
+      "Have you used, where and how?"
+    ],
+    "Playwright": [
+      "Have you used, where and how?"
+    ],
+    "Angular": [
+      "How do you create a component? Angular CLI, Create Script file",
+      "What are the various pieces that make up a component? Script file, template, CSS, and possible test file",
+      "What is a directive? Two types, structural, attribute.",
+      "What is an observable? Observer -> notifies -> Subject. How is it different than a promise?",
+      "What kind of data binding does Angular offer? How do you implement it?",
+      "What is the Ng Model for?",
+      "How is routing/navigation handled in Angular?",
+      "What is dependency injection and how does Angular allow you to use it?"
+    ],
+    "TypeScript": [
+      "What is the difference between an Interface and a Type?",
+      "TypeScript has an Any type and an Unknown type? What are they for and how are they different?",
+      "What are type guards?",
+      "What are utility types?",
+      "TypeScript has generics, what are they and how are they useful?"
+    ],
+    "REST APIs": [
+      "What characterizes a REST API? HTTP protocol, Resources identified by URI, CRUD to HTTP Method mappings. Idempotent.",
+      "Is a REST API stateful or stateless?",
+      "Have you used Swagger and/or Open API? If so how?"
+    ],
+    "Containers": [
+      "Have you ever set up your application to run in a container? If so, describe the contents of the Dockerfile. Image, copy code, install packages, startup command.",
+      "Have you ever deployed your container to Kubernetes? Describe a typical Kubernetes configuration."
+    ],
+    "Cloud": [
+      "What Cloud Platforms have you used? What services of those platforms have you used?"
+    ],
+    "C#": [
+      "C# has two types of variables reference types and value types. What is the difference?",
+      "When passing parameters into functions, are they passed by value or reference by default? Can this behavior be changed and if so in what ways?",
+      "C# has the == operator to compare two variables. By default how does it compare two reference type variables. What is the proper way to compare reference variables. What about comparing strings with ==?",
+      "C# has a feature called generics, what are they and how are they useful?",
+      "What is the difference between an abstract class and an interface.",
+      "C# has a feature called lambda expressions, what are they and how are they related to Delegates?",
+      "Have you used the LINQ feature of C#, if so how?",
+      "What unit testing experience with the C# language you have?"
+    ],
+    ".NET": [
+      ".NET has a feature called dependency injection, what is it and how does .NET allow you to use it?",
+      "Describe how to develop a Web API endpoint using .NET. Minimal endpoint vs. controller endpoints. Routing. Parameters. ActionResult. Middleware"
+    ],
+    "ASP.NET MVC": [
+      "Describe how to develop an MVC endpoint using .NET. Template, how differs from Web API endpoint."    ],
+    "Entity Framework": [
+      "What is the main class used for interacting with the Database? DbContext",
+      "What are the two main methods to integrate/manage the DB schema with the entity framework? Schema first, code first.",
+      "What is the return type of a query using DbContext?",
+      "Entity Framework implements a software design pattern called unit of work. What is it and what is it used for?"
+    ],
+    "AWS": [
+      "What is your experience with developing applications deployed and using AWS's services? What services? What architectures?",
+      "How have you created/managed those services? IoC? Console? CLI?"
+   ],
+    "AWS Lambda": [
+      "Have you used AWS Lambdas? If yes, how so?",
+      "Can you describe a situation where you had to troubleshoot cold start issues in a Lambda function? What metrics did you analyze, what tools did you use for diagnosis, and what specific optimizations did you implement to address the problem?"
+    ],
+    "AWS Cognito": [
+      "Have you used AWS Cognito? If yes, how so?",
+      "Describe a custom authentication flow you've implemented with Cognito User Pools that required Lambda triggers. What specific challenges did you encounter with token handling, user migration, or identity federation, and how did you solve them"
+    ],
+    "AWS CloudWatch": [
+      "Have you used AWS CloudWatch? If yes, how so?"
+    ],
+    "AWS Aurora": [
+      "Have you used AWS Aurora? If yes, how so?"
+    ],
+    "AWS Bedrock": [
+      "Have you used AWS Bedrock? If yes, how so?"
+    ],
+    "AWS VPC": [
+      "Have you used AWS VPC? If yes, how so?"
+    ],
+    "AWS CodePipeline": [
+      "Have you used AWS CodePipeline? If yes, how so?"
+    ],
+    "AWS DynamoDB": [
+      "Have you used AWS DynamoDB? If yes, how so?"
+    ],
+    "Data Pipelines": [
+      "Place holder for standardization"
+    ],
+    "C": [
+      "Place holder for standardization"
+    ],
+    "T-SQL": [
+      "Place holder for standardization"
+    ],
+    "Microsoft Azure": [
+      "Place holder for standardization"
+    ],
+    "Azure Functions": [
+      "Place holder for standardization"
+    ],
+    "Azure Logic Apps": [
+      "Place holder for standardization"
+    ],
+    "ETL": [
+      "Place holder for standardization"
+    ],
+    "Test Driven Development (TDD)": [
+      "Place holder for standardization"
+    ],
+    "Behavioral Driven Development (BDD)": [
+      "Place holder for standardization"
+    ],
+    "ORM": [
+      "Place holder for standardization"
+    ],
+    "SSIS": [
+      "Place holder for standardization"
+    ],
+    "PostgreSQL": [
+      "Place holder for standardization"
+    ],
+    "AWS CloudFormation": [
+      "Place holder for standardization"
+    ],
+    "Python": [
+      "Place holder for standardization"
+    ],
+    "Pytest": [
+      "Place holder for standardization"
+    ],
+    "GitHub": [
+      "Place holder for standardization"
+    ],
+    "GitHub Actions": [
+      "Place holder for standardization"
+    ],
+    "Test Automation": [
+      "Place holder for standardization"
+    ],
+    "Test Data Management": [
+      "Place holder for standardization"
+    ],
+    "Unit Testing": [
+      "Place holder for standardization"
+    ],
+    "Integration Testing": [
+      "Place holder for standardization"
+    ],
+    "System Testing": [
+      "Place holder for standardization"
+    ],
+    "Performance Testing": [
+      "Place holder for standardization"
+    ],
+    "API Testing": [
+      "Place holder for standardization"
+    ],
+    "MSTest": [
+      "Place holder for standardization"
+    ],
+    "Mocks": [
+      "Place holder for standardization"
+    ],
+    "Visual Studio": [
+      "Place holder for standardization"
+    ],
+    "VS Code": [
+      "Place holder for standardization"
+    ],
+    "Business Process Automation": [
+      "Place holder for standardization"
+    ],
+    "Content Management Systems": [
+      "Place holder for standardization"
+    ],
+    "Virtual Machines": [
+      "Place holder for standardization"
+    ],
+    "Cyber Security": [
+      "Place holder for standardization"
+    ],
+    "React Native": [
+      "Place holder for standardization"
+    ],
+    "Power Platform": [
+      "Place holder for standardization"
+    ],
+    "Dataverse": [
+      "Place holder for standardization"
+    ],
+    "Dynamics": [
+      "Place holder for standardization"
+    ],
+    "Power BI": [
+      "Place holder for standardization"
+    ],
+    "Power Automate": [
+      "Place holder for standardization"
+    ],
+    "Power Apps": [
+      "Place holder for standardization"
+    ],
+    "SSRS": [
+      "Place holder for standardization"
+    ],
+    "OAuth 2.0": [
+      "Place holder for standardization"
+    ],
+    "PowerShell": [
+      "Place holder for standardization"
+    ],
+    "Azure DevOps": [
+      "Place holder for standardization"
+    ],
+    "Vue": [
+      "Place holder for standardization"
+    ],
+    "Android": [
+      "Place holder for standardization"
+    ],
+    "iOS": [
+      "Place holder for standardization"
+    ],
+    "SDKs": [
+      "Place holder for standardization"
+    ],
+    "OpenCL": [
+      "Place holder for standardization"
+    ],
+    "CUDA": [
+      "Place holder for standardization"
+    ],
+    "Kernel Programming": [
+      "Place holder for standardization"
+    ],
+    "GPU Programming": [
+      "Place holder for standardization"
+    ],
+    "GPU Algorithm Design": [
+      "Place holder for standardization"
+    ],
+    "GPU Algorithm Testing": [
+      "Place holder for standardization"
+    ],
+    "Design Patterns": [
+      "Place holder for standardization"
+    ],
+    "Adobe Experience Manager": [
+      "Place holder for standardization"
+    ],
+    "SASS": [
+      "Place holder for standardization"
+    ],
+    "Java EE": [
+      "Place holder for standardization"
+    ],
+    "Infrastructure as Code": [
+      "Place holder for standardization"
+    ],
+    "Data Distribution Services (DDS)": [
+      "Place holder for standardization"
+    ],
+    "Network Sniffing": [
+      "Place holder for standardization"
+    ],
+    "Service Oriented Architecture": [
+      "Place holder for standardization"
+    ],
+    "Microservices": [
+      "Place holder for standardization"
+    ],
+    "Algorithms": [
+      "Place holder for standardization"
+    ],
+    "Domain Driven Design": [
+      "Place holder for standardization"
+    ],
+    "GCP": [
+      "Place holder for standardization"
+    ],
+    "Windows Forms": [
+      "Place holder for standardization"
+    ],
+    "Windows Presentation Foundation (WPF)": [
+      "Place holder for standardization"
+    ],
+    "Windows Communication Foundation (WCF)": [
+      "Place holder for standardization"
+    ],
+    "Object Oriented Programming (OOP)": [
+      "Place holder for standardization"
+    ],
+    "Bootstrap": [
+      "Place holder for standardization"
+    ],
+    "TailwindCSS": [
+      "Place holder for standardization"
+    ],
+    "Machine Learning (ML)": [
+      "Place holder for standardization"
+    ],
+    "Large Language Models (LLMs)": [
+      "Place holder for standardization"
+    ],
+    "Natural Language Processing (NLP)": [
+      "Place holder for standardization"
+    ],
+    "Automatic Speech Recognition (ASR)": [
+      "Place holder for standardization"
+    ],
+    "Shell Scripting": [
+      "Place holder for standardization"
+    ],
+    "Linux Rpm Packaging": [
+      "Place holder for standardization"
+    ],
+    "Event-Driven Architecture": [
+      "Place holder for standardization"
+    ],
+    "Mobile App Development": [
+      "Place holder for standardization"
+    ]
+  },
+  "updatedAt": "2025-04-08T20:43:00.000Z"
+}

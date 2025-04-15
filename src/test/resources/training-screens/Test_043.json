@@ -1,0 +1,30 @@
+{
+  "id": "Test_043",
+  "candidateName": "Test 043",
+  "recruiterName": "Test Recruiter",
+  "screenDate": "",
+  "screenTime": "",
+  "jobDescription": "Our Healthcare client is looking to bring aboard a mid to senior level Software Engineers with strong Java development background working in a Linux/UNIX environment, coupled with knowledge of Microservices/API frameworks.  This would be to join their team on a 12+ month consulting basis with a strong potential for extension. \n\nResponsibilities would include:\n\nDevelop microservices using Java, Spring Boot, Angular, or other programming languages, adhering to industry best practices and coding standards.\nDevelop and execute unit, component and integration tests, using Cypress and/or Cucumber, to verify the engineering work meets requirements\nDocument design decisions, design patterns, and implementation details related to the engineering work\nSoftware development adhering to SDLC including requirements discovery, design, verification, product delivery and maintenance\nExecution of manual test procedures\nTroubleshooting of failed tests or other software bugs\nParticipates in Agile ceremonies as a member of a scrum team\nThe ideal candidate will have multiple years of experience with the following:\n\n \n\nStrong professional experience using object-oriented design, data modeling, and analysis methodologies\nExtensive background working with Enterprise Java technologies and using application servers including Spring, Spring Boot and/or other micro-services/API frameworks.\nExperience with Angular\nUnit testing background utilizing Cypress or Cucumber\nExperience working with Global teams and cross functional teams\nUnix/Linux skills, including finding and fixing abnormal processes, using shell scripting\nTDD and/or BDD practices.",
+  "technologies": [
+    "Linux",
+    "Microservices",
+    "Rest APIs",
+    "Java",
+    "Spring Boot",
+    "Spring",
+    "Angular",
+    "Unit Testing",
+    "Integration Testing",
+    "Cypress",
+    "Cucumber",
+    "Design Patterns",
+    "Object Oriented Programming (OOP)",
+    "Shell Scripting",
+    "Test Driven Development (TDD)",
+    "Behavioral Driven Development (BDD)"
+  ],
+  "createdAt": "2025-02-13T06:35:32.829Z",
+  "role": "Test Role",
+  "client": "Test Client",
+  "updatedAt": "2025-04-09T05:33:30.667Z"
+}

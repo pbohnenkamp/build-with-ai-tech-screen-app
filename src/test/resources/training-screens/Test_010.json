@@ -1,0 +1,13 @@
+{
+  "id": "Test_010",
+  "candidateName": "Test 010",
+  "recruiterName": "Test Recruiter",
+  "screenDate": "",
+  "screenTime": "",
+  "jobDescription": "Our direct financial services client is looking for an experienced Java Software Engineer to join their team as on a contract through the end of the year, with the potential for extension.  This software engineer will join as a highly skilled Java-J2EE developer with solid object-oriented experience.  This individual will participate in a variety of planning and development activities and be responsible for developing prototypes, unit test cases, and design artifacts.  Other responsibilities will include ensuring that the application components are built to the highest standards across the application lifecycle with a constant focus on process improvement through unit testing automation.\n\n \n\nThe ideal candidate will have the following skills:\n\nHighly skilled with Java-J2EE development, with solid object oriented  experience\nShould be up-to-date with current technologies and leading design patterns\nStrong knowledge on Core Java, Spring (Core, MVC, JDBC), Hibernate/JDBC/JPA/ORM, JSON \nMultiple years of experience in Java (Core & EE,Spring, JMS,Junit)\nMust have experience and in-depth knowledge of SQL and RDBMS, should be able to write and understand SQL queries, stored procedure, index and triggers. MySql experience is a plus. \nExperience with AWS is a plus\n ",
+  "technologies": [],
+  "createdAt": "2025-02-13T06:36:53.792Z",
+  "role": "Test Role",
+  "client": "Test Client",
+  "updatedAt": "2025-04-09T06:27:43.599Z"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "Test_038",
+  "candidateName": "Test 038",
+  "recruiterName": "Test Recruiter",
+  "screenDate": "",
+  "screenTime": "",
+  "jobDescription": "Job Description:\n\nThe senior level .NET Web Developer designs, develops, and implements web-based applications using .NET framework to support business requirements. Includes the use of related development technologies such as ASP.NET, MVC, .NET CORE and supported programming languages (e.g. C#, C++, bootstrap) and scripting languages (e.g. TypeScript, JavaScript). Performs development of front-end and back-end development of web applications and web API's (webservices). Follows approved life cycle methodologies, creates documentation, and performs application coding and testing. Resolves technical issues through debugging, research, and investigation.\n\n \n\nRequirements:\n\nMicrosoft .Net Application Development utilizing DB2, SQL Server or similar relational database.\nExperience with GitHub Enterprise\nExperience with Ajax, JavaScript, Web Services and HTML\n\n\n",
+  "technologies": [
+    ".NET",
+    "C#",
+    "ASP.NET MVC",
+    "C++",
+    "Bootstrap",
+    "TypeScript",
+    "JavaScript",
+    "SQL",
+    "DB2",
+    "AJAX",
+    "REST APIs"
+  ],
+  "createdAt": "2025-02-13T06:20:30.620Z",
+  "role": "Test Role",
+  "client": "Test Client"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "Test_052",
+  "candidateName": "Test 052",
+  "recruiterName": "Test Recruiter",
+  "screenDate": "",
+  "screenTime": "",
+  "jobDescription": "Title: React Software Developer C#/.NET a plus\n\n\nOur financial services client is looking for experienced mid to senior level full stack development professional to join their team as on long term 12+ month a contract basis, with strong potential for long term extension or for the role to turn into a permanent role in the future. \n\n\nIn this role, this individual will be joining an Agile development team to assist with new development and enhancement projects. \n \nLooking for React Developer who can architect our approach and ensure that we are moving forward with best practices in place. \n\n\nThe ideal candidate will have experience with the following: \n\nStrong development background using React.  \nStrong background with CSS for corporate websites.\nGrabbing assets and specs from Figma designs\nDeveloping responsive front-ends \nCreating charts and tables.\n.NET Generalist with strong preference for experience writing/using web services. \nProfessional experience working with C#, ASP.NET, T-SQL, Web API, and SSIS \nStrong SQL skills \nExposure to Entity Framework or other ORM \nExperience working on initiatives following an Agile development approach as well as Test Driven Development background. \n",
+  "technologies": [
+    "React",
+    "CSS",
+    "Figma",
+    "Responsive Design",
+    ".NET",
+    "C#",
+    "ASP.NET",
+    "T-SQL",
+    "SSIS",
+    "SQL",
+    "Entity Framework",
+    "Test Driven Development (TDD)"
+  ],
+  "createdAt": "2025-02-13T06:50:43.488Z",
+  "role": "Test Role",
+  "client": "Test Client"
+}

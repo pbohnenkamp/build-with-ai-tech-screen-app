@@ -1,0 +1,28 @@
+{
+  "id": "Test_023",
+  "candidateName": "Test 023",
+  "recruiterName": "Test Recruiter",
+  "screenDate": "",
+  "screenTime": "",
+  "jobDescription": "What makes this role unique: The type of work we have ranges from doing greenfield development, to support and lifecycle. This work includes API development, UI development and back-end application development for overnight processing. Projects vary, but currently we are working on tax document processing, automation of trade processing, and development of services to support applications being built for branch offices.  \n\n Candidate Profile: \n\n.NET Generalist with strong preference for experience writing/using web services. See above for more detail \nPreferred: C#, T-SQL, Web API, JavaScript \nA plus to have: SSIS, MVC, CA Autosys, Azure development, Angular \nStrong SQL skills \nExperience with Test Driven Development \nExposure to Entity Framework or other ORM \n \n\nQualities Needed: \n\nGood communicator who wants to work in a team environment, comfortable performing pair programming \nAnalytical – not afraid to dive into complex code and data to troubleshoot issues \nCreative problem solver who is automation focused – we’re looking to not have recurring work come back to us, but to better automate or teach/train users for self service \nMotivated by small quick wins and process improvement \nComfortable working in an agile environment.? Prefer experience working in agile \n \n\nBenefits to being placed at company: \n\nLong-term contract with potential for extended renewals \nTeam focused environment.? We treat our consultants as part of the team. \nRich developer community with lunch & learns on best practices. ?Focus on software craftsmanship. \nA DevOps culture. We use automated deployment and are constantly looking to improve in the DevOps space. Our DBAs/App Admins are part of our collaboration. \nAgile/lean practices with diversity of projects ",
+  "technologies": [
+    ".NET",
+    "C#",
+    "T-SQL",
+    "SQL",
+    "JavaScript",
+    "SSIS",
+    "ASP.NET MVC",
+    "CA Autosys",
+    "Microsoft Azure",
+    "Angular",
+    "Test Driven Development (TDD)",
+    "Entity Framework",
+    "REST APIs",
+    "DevOps"
+  ],
+  "createdAt": "2025-02-12T05:41:08.948Z",
+  "role": "Test Role",
+  "client": "Test Client",
+  "updatedAt": "2025-04-09T05:29:30.390Z"
+}

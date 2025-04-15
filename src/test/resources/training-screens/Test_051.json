@@ -1,0 +1,23 @@
+{
+  "id": "Test_051",
+  "candidateName": "Test 051",
+  "recruiterName": "Test Recruiter",
+  "screenDate": "",
+  "screenTime": "",
+  "jobDescription": "Position:   Certified Microsoft .NET Web Developers (4)\n\nDuration:  3 month contract with likelihood for MULTI YEAR extensions\n\nTechnologies: .NET , C#, Web APIs, Oracle, SQL, DB2, PostgreSQL\n\n \n\nSummary:\n\nThis position is needed for the development and support of critical priority applications for The Company. Project work will include application design and development, both new development and modifications to existing code.\n\n \n\nRequirements:\n\n \n\nDemonstrated success in designing, creating, and maintaining web services, system integration, web development, in Agile Scrum development environments.\nWell experienced in .NET 4.8 or greater, C#, Oracle, SQL, DB2 or PostgreSQL\nExperience participating in the testing process through test review and analysis.\nSenior level Microsoft .Net Web Developer capabilities – ability to rely on experience and judgment to plan and accomplish goals.\nAbility to independently perform a variety of complicated tasks, a wide degree of creativity and latitude is expected.    \n \n\nNice to Have Skills:\n\nWeb Accessibility coding\nWCF - Windows Communication Foundation\nExperience writing web APIs in C# .NET environment.\nGCP\nPrevious experience providing this service for government a plus, and experience with The Company's environments will be especially valuable.",
+  "technologies": [
+    ".NET",
+    "C#",
+    "Oracle",
+    "SQL",
+    "DB2",
+    "PostgreSQL",
+    "Web Accessibility",
+    "Windows Communication Foundation (WCF)",
+    "GCP",
+    "Rest APIs"
+  ],
+  "createdAt": "2025-02-13T06:48:48.843Z",
+  "role": "Test Role",
+  "client": "Test Client"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "Test_040",
+  "candidateName": "Test 040",
+  "recruiterName": "Test Recruiter",
+  "screenDate": "",
+  "screenTime": "",
+  "jobDescription": "Title: Software Engineer\n\nDuration: 12 month contract\n\nResponsibilities:\n\nDevelop microservices using Java, Spring Boot, Angular, or other programming languages, adhering to industry best practices and The Company's coding standards.\nDevelop and execute unit, component and integration tests, using Cypress and/or Cucumber, to verify the engineering work meets requirements\nDocument design decisions, design patterns, and implementation details related to the engineering work\nSoftware development adhering to SDLC including requirements discovery, design, verification, product delivery and maintenance\nExecution of manual test procedures\nTroubleshooting of failed tests or other software bugs\nParticipates in Agile ceremonies as a member of a scrum team\n ",
+  "technologies": [
+    "Microservices",
+    "Java",
+    "Spring",
+    "Spring Boot",
+    "JavaScript",
+    "Angular",
+    "Unit Testing",
+    "Integration Testing",
+    "Cypress",
+    "Cucumber",
+    "Design Patterns",
+    "REST APIs"
+  ],
+  "createdAt": "2025-02-13T06:27:26.783Z",
+  "role": "Test Role",
+  "client": "Test Client",
+  "updatedAt": "2025-04-09T05:32:50.119Z"
+}

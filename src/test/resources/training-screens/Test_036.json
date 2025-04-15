@@ -1,0 +1,20 @@
+{
+  "id": "Test_036",
+  "candidateName": "Test 036",
+  "recruiterName": "Test Recruiter",
+  "screenDate": "",
+  "screenTime": "",
+  "jobDescription": "SUMMARY:\n\nThe successful Business Process Engineer uses analytical skills to model business processes and unlock efficiencies within those processes.  He or she will define and create a workflow application in a way that meets the end user’s needs.  The Engineer will use workflow software to create process models, build user interfaces and forms, implement business rules and enforce compliance gates.  He or she will provide training and support to the Business Unit, prioritize change requests and implement enhancements.  Other responsibilities include managing the maintenance of forms and workflows in the production environment, troubleshooting technical support issues and acting as a liaison with the software vendor and The Company.\n\n \n\nESSENTIAL DUTIES AND RESPONSIBILITIES:\n\nProject Execution:\n\nParticipate in development and implementation of automated process workflow solutions, using a variety of technologies (Java, JavaScript, C#, SSIS) to provide accurate and creative solutions to client problems\nRecommend and implement solutions to client problems that enhance user experiences (UX)\nAbility to extract and interpret data to support analytical approach\nTroubleshoot and triage issues within system and solutions and escalating where appropriate\nQuality Assurance:\n\nFollow general coding standards and best practices to ensure solutions meet appropriate integrity levels\nPerform testing through manual and/or automated methods to ensure solutions meet functional requirements\nLocate adequate data to facilitate testing scenarios\nRelationship Management:\n\nDevelop partnerships with team, functional peers, sponsors, and multiple stakeholders\nTailor communication appropriately for technical and non-technical audiences\nCollaborate with vendor teams on integration and support of platform\nContinuous Improvement:\n\nIdentify and implement continuous improvement and innovation opportunities within current technologies\nEDUCATION / EXPERIENCE / QUALIFICATIONS\n\nBS in Software Engineering, Computer Science, Computer Engineering, Management Information Systems, or Information Technology Management is preferred\n1-2 years of relevant software development experience in an enterprise, internship or academic environment combined with a proven track record of delivery quality solutions on time.\nStrong analytical skills with the ability to perform complex problem solving.\nExcellent interpersonal, negotiation and influencing skills leading to trusting relationships with peers, business partners and their leadership team.\nDemonstrated relationship builder; able to establish both internal and external working relationships in order to identify and implement strategies for business growth.\nAble to implement change effectively and collaboratively in a team environment and with associates at all levels and in all areas of the firm.\nWorking Knowledge of Object-Oriented programming (Java preferred), Web Technologies and Architecture, IT Infrastructure and Database Operations.",
+  "technologies": [
+    "Java",
+    "JavaScript",
+    "C#",
+    "SSIS",
+    "Object Oriented Programming (OOP)",
+    "SQL",
+    "Business Process Automation"
+  ],
+  "createdAt": "2025-02-13T06:16:57.275Z",
+  "role": "Test Role",
+  "client": "Test Client"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "Test_034",
+  "candidateName": "Test 034",
+  "recruiterName": "Test Recruiter",
+  "screenDate": "",
+  "screenTime": "",
+  "jobDescription": " We have a need for junior plus/intermediate minus full stack Java developer roles.",
+  "technologies": [
+    "Java",
+    "Spring",
+    "Spring Boot",
+    "SQL",
+    "CSS",
+    "Angular",
+    "React",
+    "JavaScript",
+    "REST APIs"
+  ],
+  "createdAt": "2025-02-13T06:10:41.649Z",
+  "role": "Test Role",
+  "client": "Test Client"
+}

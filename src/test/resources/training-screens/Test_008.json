@@ -1,0 +1,13 @@
+{
+  "id": "Test_008",
+  "candidateName": "Test 008",
+  "recruiterName": "Test Recruiter",
+  "screenDate": "",
+  "screenTime": "",
+  "jobDescription": "Position:  Software Developer – GPU kernel development in OpenCL\n\nDuration: 12 months with opportunities for multiple extensions\n\nREQUIRED SKILLS!  GPU kernel development using OpenCL, C++ and Linux\n\nTeam is responsible for acquiring data from the CT scanner and reconstructing CT images. Involves developing algorithms and high performance computing on GPUs. Product uses Linux operating systems.  Mostly using OpenCL and C++ for development.\n\nREQUIRED SKILLS!  GPU kernel development using OpenCL, C++ and Linux\n\nJob description:\n\nThe team developing  CT scanners is looking for highly motivated software engineers to join them to develop the next generation of CT scanners. Software Engineers will be working on CT image reconstruction team using state-of-the-art “compute” and software platforms.\n\nIn this role you will:\n\n·         Participate in developing and testing CT image reconstruction software, utilizing latest high-performance computing hardware (GPGPU/multicore CPU) and software technologies\n\n·         Experimenting with emerging high performance computing technologies to optimize CT algorithm performance\n\n·         Collaborate with cross-functional teams to translate CT image reconstruction algorithms into product software\n\nRequired qualifications:\n\nSolid experience writing GPU kernels using OpenCL \nKernel profiling and optimization\nExperience porting algorithms to GPUs\nExperience testing development for algorithms\n C++, Linux OS, Familiarity with OOP, design patterns\nExperience with CUDA\nStrong analytical and problem-solving skills\nStrong math background/orientation\nLinux Shell Scripting\n",
+  "technologies": [],
+  "createdAt": "2025-02-13T05:45:45.260Z",
+  "role": "Test Role",
+  "client": "Test Client",
+  "updatedAt": "2025-04-09T06:27:44.954Z"
+}

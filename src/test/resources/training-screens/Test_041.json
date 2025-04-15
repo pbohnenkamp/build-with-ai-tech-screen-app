@@ -1,0 +1,28 @@
+{
+  "id": "Test_041",
+  "candidateName": "Test 041",
+  "recruiterName": "Test Recruiter",
+  "screenDate": "",
+  "screenTime": "",
+  "jobDescription": "Title: Software Developer – AI\nStart/Duration: 12 month contract with an extension likely / Possible Contract-to-hire\nLocation: Remote – US\n\nThis is an equal opportunity employer. All qualified applicants will receive consideration for employment without\nregard to race, color, religion, sex, sexual orientation, gender identity, age, disability, or national origin.\nRequired Skills\n1. C# - .NET 8+\n2. PostgreSQL with Entity Framework Core\n3. Experience with GitHub\n \nRecommended\n1. Experience with AWS (Lambda, Cognito, CloudWatch, Aurora, Bedrock, VPC)\n \nNice to have\n2. Angular 18+\n3. Python 3.12+",
+  "technologies": [
+    "C#",
+    ".NET",
+    "PostgreSQL",
+    "SQL",
+    "Entity Framework",
+    "AWS",
+    "AWS Lambda",
+    "AWS Cognito",
+    "AWS CloudWatch",
+    "AWS Aurora",
+    "AWS Bedrock",
+    "AWS VPC",
+    "Angular",
+    "Python"
+  ],
+  "createdAt": "2025-02-12T05:36:32.495Z",
+  "role": "Test Role",
+  "client": "Test Client",
+  "updatedAt": "2025-04-09T05:28:46.221Z"
+}

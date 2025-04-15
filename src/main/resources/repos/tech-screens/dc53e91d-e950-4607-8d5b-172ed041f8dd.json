@@ -1,0 +1,30 @@
+{
+  "id": "dc53e91d-e950-4607-8d5b-172ed041f8dd",
+  "createdAt": "2025-04-14T00:45:36.893Z",
+  "candidateName": "Test 01",
+  "client": "Test Client",
+  "role": "Test Role",
+  "recruiterName": "Test Recruiter",
+  "screenDate": "2025-04-09",
+  "screenTime": "12:00",
+  "jobDescription": "Some job description",
+  "technologies": [
+    "Agile",
+    "Git",
+    "CI/CD"
+  ],
+  "questions": {
+    "Agile": [
+      "Have you use Agile for SDLC methodology? What flavor?",
+      "How do you estimate? Story points? T-shirt sizes?",
+      "What software have you used to manage your requirements and progress?"
+    ],
+    "Git": [
+      "What Git branches models are you most familiar with?"
+    ],
+    "CI/CD": [
+      "Are there any CI/CD pipelines that run when your code is checked in PR is merged?",
+      "What tools or technologies? Did you manage the configuration of them?"
+    ]
+  }
+}

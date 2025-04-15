@@ -1,0 +1,23 @@
+{
+  "id": "Test_016",
+  "candidateName": "Test 016",
+  "recruiterName": "Test Recruiter",
+  "screenDate": "",
+  "screenTime": "",
+  "jobDescription": "General full stack .NET developer",
+  "technologies": [
+    "C#",
+    ".NET",
+    "SQL",
+    "JavaScript",
+    "CSS",
+    "Entity Framework",
+    "React",
+    "Angular",
+    "Rest APIs"
+  ],
+  "createdAt": "2025-02-12T06:07:53.082Z",
+  "role": "Test Role",
+  "client": "Test Client",
+  "updatedAt": "2025-04-09T06:03:54.905Z"
+}

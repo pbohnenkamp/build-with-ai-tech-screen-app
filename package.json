@@ -2,12 +2,12 @@
   "name": "build-with-ai-tech-screen-app",
   "version": "1.0.0",
   "description": "Repo to use in conjunction with Explore DDD 2025 Building with AI: AI-Assisted Development for AI-Powered Solutions Hands-On Session",
-  "main": "server.js",
+  "main": "src/main/js/server.js",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "node src/main/js/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
