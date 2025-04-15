@@ -32,6 +32,7 @@ function compareTechnologies(expected, actual) {
   const f1Score = precision + recall > 0 ? 2 * (precision * recall) / (precision + recall) : 0;
   
   return {
+    error: falseNegatives.length > 0 && falsePositives.length > 5,
     matches,
     falsePositives,
     falseNegatives,

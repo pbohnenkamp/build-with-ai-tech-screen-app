@@ -8,7 +8,7 @@ const path = require('path');
 function getAllTechnologies() {
   try {
     // Read the JSON file
-    const filePath = path.join(__dirname, '../../../repos/question-repo.json');
+    const filePath = path.join(__dirname, '../resources/repos/question-repo.json');
     const fileContent = fs.readFileSync(filePath, 'utf8');
     const data = JSON.parse(fileContent);
     
