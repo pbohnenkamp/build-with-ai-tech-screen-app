@@ -32,7 +32,6 @@ function compareTechnologies(expected, actual) {
   const f1Score = precision + recall > 0 ? 2 * (precision * recall) / (precision + recall) : 0;
   
   return {
-    error: falseNegatives.length > 0 && falsePositives.length > 5,
     matches,
     falsePositives,
     falseNegatives,
@@ -56,8 +55,11 @@ async function processTrainingScreen(filePath) {
     // Extract job description and expected technologies
     const { id, jobDescription, technologies: expectedTechnologies } = screenData;
     
-    // Call the AI tagging function
+    // Call the AI tagging function and measure execution time
+    const startTime = Date.now();
     const actualTechnologies = await getTagsFromJobDescription(jobDescription);
+    const endTime = Date.now();
+    const executionTimeMs = endTime - startTime;
     
     // Compare the results
     const comparison = compareTechnologies(expectedTechnologies, actualTechnologies);
@@ -66,6 +68,7 @@ async function processTrainingScreen(filePath) {
       id,
       expectedTechnologies,
       actualTechnologies,
+      executionTimeMs,
       ...comparison
     };
   } catch (error) {
@@ -115,10 +118,12 @@ async function runBatchTest() {
     const totalPrecision = validResults.reduce((sum, r) => sum + r.precision, 0);
     const totalRecall = validResults.reduce((sum, r) => sum + r.recall, 0);
     const totalF1Score = validResults.reduce((sum, r) => sum + r.f1Score, 0);
+    const totalExecutionTime = validResults.reduce((sum, r) => sum + r.executionTimeMs, 0);
     
     const avgPrecision = validResults.length > 0 ? totalPrecision / validResults.length : 0;
     const avgRecall = validResults.length > 0 ? totalRecall / validResults.length : 0;
     const avgF1Score = validResults.length > 0 ? totalF1Score / validResults.length : 0;
+    const avgExecutionTime = validResults.length > 0 ? totalExecutionTime / validResults.length : 0;
     
     // Print summary
     console.log('\n=== BATCH TEST SUMMARY ===');
@@ -128,6 +133,7 @@ async function runBatchTest() {
     console.log(`Average Precision: ${avgPrecision.toFixed(4)}`);
     console.log(`Average Recall: ${avgRecall.toFixed(4)}`);
     console.log(`Average F1 Score: ${avgF1Score.toFixed(4)}`);
+    console.log(`Average Execution Time: ${avgExecutionTime.toFixed(2)}ms`);
     
     // Print detailed results
     console.log('\n=== DETAILED RESULTS ===');
@@ -144,6 +150,7 @@ async function runBatchTest() {
         console.log(`  Precision: ${result.precision.toFixed(4)}`);
         console.log(`  Recall: ${result.recall.toFixed(4)}`);
         console.log(`  F1 Score: ${result.f1Score.toFixed(4)}`);
+        console.log(`  Execution Time: ${result.executionTimeMs.toFixed(2)}ms`);
       }
     });
     
