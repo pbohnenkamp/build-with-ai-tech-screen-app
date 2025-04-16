@@ -11,7 +11,7 @@ const getTagsFromJobDescription = async (
   promptOptions = {}
 ) => {
   await new Promise(resolve => setTimeout(resolve, 2000));
-  return [];
+  return ["Java", "React", "Spring"];
 };
 
 module.exports = getTagsFromJobDescription;

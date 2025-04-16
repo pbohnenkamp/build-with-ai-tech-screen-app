@@ -52,6 +52,19 @@
         color: white;
         background: rgba(255, 255, 255, 0.1);
       }
+      /* AI Suggestions specific styling */
+      .ai-suggestions-tagify .tagify__tag {
+        --tag-bg: #ffe0b2;
+        --tag-text-color: #000000;
+        --tag-hover: #ffcc80;
+      }
+      .ai-suggestions-tagify .tagify__tag__removeBtn {
+        color: #000000;
+      }
+      .ai-suggestions-tagify .tagify__tag__removeBtn:hover {
+        color: #000000;
+        background: rgba(0, 0, 0, 0.1);
+      }
       .btn-row {
         display: flex;
         gap: 1rem;
@@ -105,7 +118,7 @@
           </div>
           <div class="mt-4">
             <h5 class="mb-2">AI Suggestions</h5>
-            <input id="aiSuggestions" type="text" class="form-control" readonly />
+            <input id="aiSuggestions" type="text" class="form-control ai-suggestions-tagify" readonly />
           </div>
         </div>
       </div>
@@ -263,6 +276,7 @@
           enabled: 0,
         },
         readonly: true,
+        className: "ai-suggestions-tagify"
       });
 
       // Load test screen data
