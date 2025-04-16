@@ -76,6 +76,7 @@ async function processTrainingScreen(filePath) {
     console.log(`  Recall: ${comparison.recall.toFixed(4)}`);
     console.log(`  F1 Score: ${comparison.f1Score.toFixed(4)}`);
     console.log(`  Execution Time: ${executionTimeMs.toFixed(2)}ms`);
+    console.log('\n\n');
 
     return {
       id,
