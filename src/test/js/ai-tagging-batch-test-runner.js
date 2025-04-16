@@ -23,8 +23,8 @@ function compareTechnologies(expected, actual) {
   
   // Find matches, false positives, and false negatives
   const matches = [...actualSet].filter(tech => expectedSet.has(tech));
-  const falsePositives = [...actualSet].filter(tech => !expectedSet.has(tech));
-  const falseNegatives = [...expectedSet].filter(tech => !actualSet.has(tech));
+  const extraTags = [...actualSet].filter(tech => !expectedSet.has(tech));
+  const missingTags = [...expectedSet].filter(tech => !actualSet.has(tech));
   
   // Calculate precision, recall, and F1 score
   const precision = actual.length > 0 ? matches.length / actual.length : 0;
@@ -32,10 +32,10 @@ function compareTechnologies(expected, actual) {
   const f1Score = precision + recall > 0 ? 2 * (precision * recall) / (precision + recall) : 0;
   
   return {
-    testPassed: falseNegatives === 0 && falsePositives < 5,
+    testPassed: missingTags.length === 0 && extraTags.length < 5,
     matches,
-    falsePositives,
-    falseNegatives,
+    extraTags,
+    missingTags,
     precision,
     recall,
     f1Score
@@ -67,11 +67,11 @@ async function processTrainingScreen(filePath) {
     
     console.log(`\n${id}:`);
     console.log(comparison.testPassed ? "  ✅ PASSED" : "  ❌ FAILED");
+    console.log(`  Missing Tags: ${comparison.missingTags.join(', ')}`);
+    console.log(`  Extra Tags: ${comparison.extraTags.join(', ')}`);
     console.log(`  Expected: ${expectedTechnologies.join(', ')}`);
     console.log(`  Actual: ${actualTechnologies.join(', ')}`);
     console.log(`  Matches: ${comparison.matches.length}`);
-    console.log(`  False Positives: ${comparison.falsePositives.length}`);
-    console.log(`  False Negatives: ${comparison.falseNegatives.length}`);
     console.log(`  Precision: ${comparison.precision.toFixed(4)}`);
     console.log(`  Recall: ${comparison.recall.toFixed(4)}`);
     console.log(`  F1 Score: ${comparison.f1Score.toFixed(4)}`);
@@ -141,10 +141,11 @@ async function runBatchTest() {
     
     // Print summary
     console.log('\n=== BATCH TEST SUMMARY ===');
+    console.log(passingResults.length === results.length ? "  ✅ PASSED" : "  ❌ FAILED");
     console.log(`Total files processed: ${files.length}`);
-    console.log(`Passing Test Results: ${passingResults.length}`);
-    console.log(`Failing Test Results: ${nonErroredResults.length - passingResults.length}`);
-    console.log(`Errors: ${results.length - nonErroredResults.length}`);
+    console.log(`Passing Test Count: ${passingResults.length}`);
+    console.log(`Failing Test Count: ${nonErroredResults.length - passingResults.length}`);
+    console.log(`Error Count: ${results.length - nonErroredResults.length}`);
     console.log(`Average Precision: ${avgPrecision.toFixed(4)}`);
     console.log(`Average Recall: ${avgRecall.toFixed(4)}`);
     console.log(`Average F1 Score: ${avgF1Score.toFixed(4)}`);
