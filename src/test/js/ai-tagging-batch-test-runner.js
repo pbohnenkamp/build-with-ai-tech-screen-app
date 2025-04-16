@@ -32,6 +32,7 @@ function compareTechnologies(expected, actual) {
   const f1Score = precision + recall > 0 ? 2 * (precision * recall) / (precision + recall) : 0;
   
   return {
+    testPassed: falseNegatives === 0 && falsePositives < 5,
     matches,
     falsePositives,
     falseNegatives,
@@ -64,6 +65,18 @@ async function processTrainingScreen(filePath) {
     // Compare the results
     const comparison = compareTechnologies(expectedTechnologies, actualTechnologies);
     
+    console.log(`\n${id}:`);
+    console.log(comparison.testPassed ? "  ✅ PASSED" : "  ❌ FAILED");
+    console.log(`  Expected: ${expectedTechnologies.join(', ')}`);
+    console.log(`  Actual: ${actualTechnologies.join(', ')}`);
+    console.log(`  Matches: ${comparison.matches.length}`);
+    console.log(`  False Positives: ${comparison.falsePositives.length}`);
+    console.log(`  False Negatives: ${comparison.falseNegatives.length}`);
+    console.log(`  Precision: ${comparison.precision.toFixed(4)}`);
+    console.log(`  Recall: ${comparison.recall.toFixed(4)}`);
+    console.log(`  F1 Score: ${comparison.f1Score.toFixed(4)}`);
+    console.log(`  Execution Time: ${executionTimeMs.toFixed(2)}ms`);
+
     return {
       id,
       expectedTechnologies,
@@ -114,46 +127,29 @@ async function runBatchTest() {
     }
     
     // Calculate aggregate statistics
-    const validResults = results.filter(r => !r.error);
-    const totalPrecision = validResults.reduce((sum, r) => sum + r.precision, 0);
-    const totalRecall = validResults.reduce((sum, r) => sum + r.recall, 0);
-    const totalF1Score = validResults.reduce((sum, r) => sum + r.f1Score, 0);
-    const totalExecutionTime = validResults.reduce((sum, r) => sum + r.executionTimeMs, 0);
+    const nonErroredResults = results.filter(r => !r.error);
+    const passingResults = nonErroredResults.filter(r => r.testPassed);
+    const totalPrecision = nonErroredResults.reduce((sum, r) => sum + r.precision, 0);
+    const totalRecall = nonErroredResults.reduce((sum, r) => sum + r.recall, 0);
+    const totalF1Score = nonErroredResults.reduce((sum, r) => sum + r.f1Score, 0);
+    const totalExecutionTime = nonErroredResults.reduce((sum, r) => sum + r.executionTimeMs, 0);
     
-    const avgPrecision = validResults.length > 0 ? totalPrecision / validResults.length : 0;
-    const avgRecall = validResults.length > 0 ? totalRecall / validResults.length : 0;
-    const avgF1Score = validResults.length > 0 ? totalF1Score / validResults.length : 0;
-    const avgExecutionTime = validResults.length > 0 ? totalExecutionTime / validResults.length : 0;
+    const avgPrecision = nonErroredResults.length > 0 ? totalPrecision / nonErroredResults.length : 0;
+    const avgRecall = nonErroredResults.length > 0 ? totalRecall / nonErroredResults.length : 0;
+    const avgF1Score = nonErroredResults.length > 0 ? totalF1Score / nonErroredResults.length : 0;
+    const avgExecutionTime = nonErroredResults.length > 0 ? totalExecutionTime / nonErroredResults.length : 0;
     
     // Print summary
     console.log('\n=== BATCH TEST SUMMARY ===');
     console.log(`Total files processed: ${files.length}`);
-    console.log(`Successful: ${validResults.length}`);
-    console.log(`Failed: ${results.length - validResults.length}`);
+    console.log(`Passing Test Results: ${passingResults.length}`);
+    console.log(`Failing Test Results: ${nonErroredResults.length - passingResults.length}`);
+    console.log(`Errors: ${results.length - nonErroredResults.length}`);
     console.log(`Average Precision: ${avgPrecision.toFixed(4)}`);
     console.log(`Average Recall: ${avgRecall.toFixed(4)}`);
     console.log(`Average F1 Score: ${avgF1Score.toFixed(4)}`);
     console.log(`Average Execution Time: ${avgExecutionTime.toFixed(2)}ms`);
-    
-    // Print detailed results
-    console.log('\n=== DETAILED RESULTS ===');
-    results.forEach(result => {
-      if (result.error) {
-        console.log(`\n${result.id}: ERROR - ${result.error}`);
-      } else {
-        console.log(`\n${result.id}:`);
-        console.log(`  Expected: ${result.expectedTechnologies.join(', ')}`);
-        console.log(`  Actual: ${result.actualTechnologies.join(', ')}`);
-        console.log(`  Matches: ${result.matches.length}`);
-        console.log(`  False Positives: ${result.falsePositives.length}`);
-        console.log(`  False Negatives: ${result.falseNegatives.length}`);
-        console.log(`  Precision: ${result.precision.toFixed(4)}`);
-        console.log(`  Recall: ${result.recall.toFixed(4)}`);
-        console.log(`  F1 Score: ${result.f1Score.toFixed(4)}`);
-        console.log(`  Execution Time: ${result.executionTimeMs.toFixed(2)}ms`);
-      }
-    });
-    
+        
   } catch (error) {
     console.error('Error running batch test:', error);
   }
