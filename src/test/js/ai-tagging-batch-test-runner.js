@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const getTagsFromJobDescription = require('../../main/js/ai-tagging');
+const { getAllTechnologies }= require('../../main/js/question-repo');
 
 // Path to the training screens directory
 const TRAINING_SCREENS_DIR = path.join(__dirname, '../resources/training-screens');
@@ -46,8 +47,9 @@ function compareTechnologies(expected, actual) {
  * Process a single training screen file
  * @param {string} filePath - Path to the training screen file
  * @returns {Promise<Object>} - Results of processing the file
+ * @param {string[]} existingTechnologies - All technologies from the question repository
  */
-async function processTrainingScreen(filePath) {
+async function processTrainingScreen(filePath, existingTechnologies) {
   try {
     // Read and parse the file
     const fileContent = fs.readFileSync(filePath, 'utf8');
@@ -58,7 +60,7 @@ async function processTrainingScreen(filePath) {
     
     // Call the AI tagging function and measure execution time
     const startTime = Date.now();
-    const actualTechnologies = await getTagsFromJobDescription(jobDescription);
+    const actualTechnologies = await getTagsFromJobDescription(jobDescription, { existingTechnologies }, { cacheEnabled: true, logMessage: true });
     const endTime = Date.now();
     const executionTimeMs = endTime - startTime;
     
@@ -118,12 +120,15 @@ async function runBatchTest() {
     
     console.log(`Found ${allFiles.length} total training screen files.`);
     console.log(`Processing ${files.length} files (starting at index ${startTestIndex}${runCount > 0 ? `, running ${runCount} files` : ''}).`);
+
+    // Get all technologies from the question repository
+    const allTechnologies = getAllTechnologies();
     
     // Process each file
     const results = [];
     for (const file of files) {
       console.log(`Processing ${path.basename(file)}...`);
-      const result = await processTrainingScreen(file);
+      const result = await processTrainingScreen(file, allTechnologies);
       results.push(result);
     }
     
