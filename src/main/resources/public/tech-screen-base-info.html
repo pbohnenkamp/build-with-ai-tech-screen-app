@@ -167,7 +167,19 @@
                 event.stopPropagation();
             } else {
                 try {
+                    // If editing, fetch existing data first
+                    let existingData = {};
+                    if (techScreenId) {
+                        const response = await fetch(`/api/tech-screens/${techScreenId}`);
+                        if (!response.ok) {
+                            throw new Error('Failed to fetch existing tech screen data');
+                        }
+                        existingData = await response.json();
+                    }
+
+                    // Merge existing data with new form values
                     const formData = {
+                        ...existingData, // Preserve existing properties
                         id: techScreenId, // Will be undefined for new tech screens
                         candidateName: document.getElementById('candidateName').value,
                         client: document.getElementById('client').value,
