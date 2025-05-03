@@ -17,9 +17,41 @@
             font-weight: 500;
             margin-bottom: 0.5rem;
         }
+        #loadingSpinner {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1000;
+        }
+        .spinner-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(147, 147, 147, 0.7);
+            z-index: 999;
+        }
+        .spinner-container {
+            position: relative;
+            z-index: 1000;
+        }
     </style>
 </head>
 <body>
+    <!-- Loading Spinner -->
+    <div class="spinner-overlay"></div>
+    <div id="loadingSpinner" class="d-none">
+        <div class="spinner-container">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </div>
+
     <div class="container mt-4">
         <div class="row mb-4">
             <div class="col-12">
@@ -97,9 +129,17 @@
         // Get tech screen ID from URL if it exists (for editing)
         const urlParams = new URLSearchParams(window.location.search);
         const techScreenId = urlParams.get('id');
+        const loadingSpinner = document.getElementById('loadingSpinner');
+
+        // Function to show/hide loading spinner
+        function toggleLoadingSpinner(show) {
+            loadingSpinner.classList.toggle('d-none', !show);
+            document.querySelector('.spinner-overlay').classList.toggle('d-none', !show);
+        }
 
         // If editing, load existing data
         if (techScreenId) {
+            toggleLoadingSpinner(true);
             fetch(`/api/tech-screens/${techScreenId}`)
                 .then(response => response.json())
                 .then(data => {
@@ -114,6 +154,9 @@
                 .catch(error => {
                     console.error('Error loading tech screen:', error);
                     alert('Failed to load tech screen data');
+                })
+                .finally(() => {
+                    toggleLoadingSpinner(false);
                 });
         }
 
